@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="幫助網,幫助網,幫助網,幫助網,幫助網" />
+<meta name="description" content="幫助網幫助網幫助網幫助網幫助網幫助網幫助網幫助網幫助網幫助網" />
+<title>幫助網 - 被幫助列表</title>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link href="css/mian.css" rel="stylesheet" type="text/css">
+<link href="css/info.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.script.js"></script>
+<script>
+//Date
+$(function(){
+	$('.time').datepicker();
+});
+
+//Tab
+$(function(){
+	var _showTab = 0;
+	$('ul.tabs li').eq(_showTab).addClass('active');
+	$('.tab_content').hide().eq(_showTab).show();
+	$('ul.tabs li').click(function() {
+		var $this = $(this),
+			_clickTab = $this.find('a').attr('href');
+		$this.addClass('active').siblings('.active').removeClass('active');
+		$(_clickTab).stop(false, true).fadeIn().siblings().hide();
+
+		return false;
+	}).find('a').focus(function(){
+		this.blur();
+	});
+});
+</script>
+</head>
+
+<body>
+<header>
+ <div class="wrapper">
+  <h1><a href="#"><img src="images/logo.png"/></a></h1>
+  <div class="column">
+   <div class="gotop"><a href="#">gotop</a></div>
+   <div class="language">
+    <form>
+     <select>
+      <option>繁體中文</option>
+      <option>简体中文</option>
+      <option>ENGLISH</option>
+     </select>
+    </form>
+   </div>
+   <div class="link"><a href="#">返回網站</a></div>
+   <div class="user">abc123@gmail.com</div>
+  </div>
+ </div>
+</header>
+<div class="content">
+ <div class="submenu">
+  <ul>
+   <li><a href="index.htm">控制台首頁</a></li>
+   <li><a href="set.htm">設定</a>
+    <ul>
+     <li><a href="#">個人資料</a></li>
+     <li><a href="#">收款資料</a></li>
+     <li><a href="#">修改密碼</a></li>
+    </ul>
+   </li>
+   <li class="now"><a href="helpAndGetHelp.htm">互助中心</a>
+    <ul>
+     <li><a href="helpAndGetHelp.htm">幫助與被幫助</a></li>
+     <li><a href="#">幫助列表</a></li>
+     <li><a href="helped.htm">被幫助列表</a></li>
+    </ul>
+   </li>
+   <li><a href="#">收益報表</a>
+    <ul>
+     <li><a href="#">收益明細</a></li>
+     <li><a href="#">收益列表</a></li>
+    </ul>
+   </li>
+   <li><a href="partnerMember.htm">我的夥伴</a>
+    <ul>
+     <li><a href="#">夥伴樹狀圖</a></li>
+     <li><a href="partnerMember.htm">我的夥伴</a></li>
+    </ul>
+   </li>
+   <li><a href="siteMessage.htm">站內訊息 (0)</a></li>
+   <li><a href="#">網站公告</a></li>
+   <li><a href="#">登出</a></li>
+  </ul>
+ </div>
+ <div class="container"> 
+  
+  <!--path-->
+  <div class="path"><a href="#">互助中心</a> &gt; <a href="#">被幫助列表</a></div>
+  
+  <!--filter-->
+  <div class="filter">
+   <form action="" method="get">
+    幫助狀態
+    <select name="">
+     <option>全部</option>
+     <option>待付款</option>
+     <option>待確認收款</option>
+     <option>已確認收款</option>
+     <option>未收到款</option>
+    </select>
+    配對時間
+    <input type="text" value="" placeholder="開始時間" class="time">
+    ~
+    <input type="text" value="" placeholder="結束時間" class="time">
+    <input type="button" value="送出" class="button">
+   </form>
+  </div>
+  
+  <!--list-->
+  <div class="list">
+   <h2>被幫助列表</h2>
+   <div class="tablebox">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+      <td>幫助人</td>
+      <td>幫助人電話</td>
+      <td>幫助狀態</td>
+      <td>幫助金額</td>
+      <td>配對時間</td>
+      <td>到期時間</td>
+      <td>功能</td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td><a class="mail" href="mailto:gjigjig@gmail.com">gjigjig@gmail.com</a></td>
+      <td>+886912312312</td>
+      <td class="blue">已確認收款</td>
+      <td>1000</td>
+      <td>2016/01/03 19:20</td>
+      <td>2016/01/03 19:20</td>
+      <td><a class="order" href="#">訂單明細</a></td>
+     </tr>
+    </table>
+   </div>
+   <!--pageNumber-->
+   <ul class="page-number">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">&lsaquo;</a></li>
+    <li><a href="#" class="on">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&rsaquo;</a></li>
+    <li><a href="#">&raquo;</a></li>
+   </ul>
+  </div>
+  
+  <!--tab-->
+  <div class="tab-wrap">
+   <ul class="tabs">
+    <li class="active"><a href="#tab1">幫助明細</a></li>
+    <li><a href="#tab2">對方資料</a></li>
+   </ul>
+   <div class="tab_container">
+    <div style="display:block;" id="tab1" class="tab_content">
+     <div class="content-info">
+      <nav>
+       <p>訂單編號：<b>12344321</b></p>
+       <p>金額：<b>1000</b></p>
+       <p>比特幣：<b>1000</b></p>
+       <p>轉入日期：<b>2016/01/03 19:20</b></p>
+       <p>註解：<b>文字文字文字</b></p>
+      </nav>
+      <br>
+      <nav> <img src="images/remittances.jpg" class="remittances-img"> <a class="zoom" href="images/remittances.jpg" target="_blank"></a> </nav>
+     </div>
+    </div>
+    <div style="display:none;" id="tab2" class="tab_content">
+     <dl class="data">
+      <dt>
+       <p>銀行名稱：<b>中華郵政</b></p>
+       <p>匯款帳號：<b>12345678</b></p>
+       <p>銀行戶名：<b>王曉明</b></p>
+      </dt>
+      <dd>
+       <p>幫助人：<b>difi@gmail.com</b></p>
+       <p>幫助人電話：<b>+886912312345</b></p>
+       <p>上線帳號：<b>1234@gmail.com</b></p>
+       <p>上線電話：<b>+886912312345</b></p>
+      </dd>
+     </dl>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<footer> Copyright © abc.com all rights reserve </footer>
+</body>
+</html>

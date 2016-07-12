@@ -1,0 +1,1 @@
+<footer> Copyright © abc.com all rights reserve </footer>

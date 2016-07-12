@@ -1,0 +1,6 @@
+ 
+  .new .modal-dialog .modal-lg div {
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+  }

@@ -1,0 +1,582 @@
+            #DropMeLeftSide0 {
+                        position: relative;
+                        width: 100%;
+            }
+            
+            #DropMeLeftSide0 #DropMe_Page0_2 .NextBtn {
+                        margin-right: 50px;
+                        margin-top: 210px;
+                        
+                        z-index: 1;
+                        
+            }
+            /*
+            #DropMeLeftSide0 #DropMe_Page0_2 .NextBtn
+            {
+                        margin-top: 45px; margin-left: 413px;
+            }*/
+            
+            #DropMeLeftSide0 #DropMe_Page0_1 .NextBtn {
+                        float: right;
+                        margin-right: 50px;
+                        margin-top: 30px;
+            }
+              /*
+            #DropMeLeftSide0 #DropMe_Page0_1 .NextBtn
+            {
+                        margin-top: 63px; margin-left: 480px;
+            }*/
+            
+            
+#DropMeLeftSide0 span.loadingSearch {
+        background-color: #FF0000;
+        background-image: url("/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/BodyPixel.jpg");
+        background-repeat: no-repeat;
+        display: block;
+        height: 40px;
+        width: 40px;
+}
+
+#DropMeLeftSide0 .mainContaner {
+    margin: 0 auto;
+    position: relative;
+    width: 972px;
+}
+#DropMeLeftSide0 .pageHead {
+    height: 156px;
+}
+#DropMeLeftSide0 .Logo {
+    display: block;
+    padding: 9px 0 0;
+}
+#DropMeLeftSide0 .AppNameTitle {
+    background-image: url("/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/DefaultIcon.jpg");
+    background-position: 7px 3px;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: block;
+    font-family: verdana;
+    font-size: 22px;
+    height: 90px;
+    padding-left: 88px;
+    padding-top: 19px;
+    text-transform: capitalize;
+}
+#DropMeLeftSide0 ul#DropMePager {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 12px;
+}
+#DropMeLeftSide0 ul#DropMePager li {
+    background-image: url("http://mobile.conduit.com/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/new.png");
+    background-repeat: no-repeat;
+    float: left;
+    font-weight: bold;
+    height: 50px;
+    margin-right: 10px;
+    padding: 24px 0 0 60px;
+    width: 92px;
+    
+    cursor: pointer;
+    
+}
+
+#DropMeLeftSide0 ul#DropMePager li.finish {
+    cursor: pointer;
+}
+#DropMeLeftSide0 ul#DropMePager li.name {
+    background-position: -37px -6px;
+}
+#DropMeLeftSide0 ul#DropMePager li.name.start {
+    background-position: -37px -89px;
+}
+#DropMeLeftSide0 ul#DropMePager li.name.finish {
+    background-position: -529px -172px;
+}
+#DropMeLeftSide0 ul#DropMePager li.type {
+    background-position: -195px -6px;
+}
+#DropMeLeftSide0 ul#DropMePager li.type.start {
+    background-position: -195px -89px;
+}
+#DropMeLeftSide0 ul#DropMePager li.type.finish {
+    background-position: -529px -172px;
+}
+#DropMeLeftSide0 ul#DropMePager li.create {
+    background-position: -352px -6px;
+}
+#DropMeLeftSide0 ul#DropMePager li.create.start {
+    background-position: -352px -89px;
+}
+#DropMeLeftSide0 ul#DropMePager li.create.finish {
+    background-position: -529px -172px;
+}
+#DropMeLeftSide0 .divFloatContainer {
+    clear: both;
+    display: block;
+    float: none;
+}
+#DropMeLeftSide0 .divFloatContainer:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+#DropMeLeftSide0 .step {
+    background-color: #FFFFFF;
+    /*border: 1px solid #FFCCCA;*/
+    margin-bottom: 50px;
+    position: relative;
+    /*top: 74px;*/
+    width: 100%;
+    height: auto;
+}
+#DropMeLeftSide0 #DropMe_Page0_2, #DropMeLeftSide0 #DropMe_Page_3 {
+    height: 330px;
+}
+
+#DropMeLeftSide0 #DropMe_Page0_2_yourproject{
+    padding-top: 40px;
+}
+/*
+#DropMeLeftSide0 #DropMe_Page0_2, #DropMeLeftSide0 #DropMe_Page_3 {
+    height: 196px;
+}*/
+
+#DropMeLeftSide0 #DropMe_Page0_1, #DropMe_Page0_2, #DropMe_Page_3{
+    padding: 0 0 100px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul {
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100%;
+}
+#DropMeLeftSide0 #DropMe_Page0_2 ul {
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100%;
+}
+#DropMeLeftSide0 #DropMe_Page_3 ul {
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100%;
+}
+/*
+#DropMeLeftSide0 #DropMe_Page0_1 ul {
+    left: 18px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 46px;
+    width: 527px;
+}*/
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.project {
+  background-color: #FFFFFF;
+  background-image: url("");
+  background-repeat: no-repeat;
+  border: 1px solid #CECECE;
+  float: left;
+  height: 140px;
+  margin-left: 7px;
+  margin-top: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+  width: 121px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.project:hover {
+  border: 6px solid #A5A5A5;
+  cursor: pointer;
+  float: left;
+  height: 135px;
+  padding-top: 20px;
+  text-align: center;
+  width: 115px;
+}
+
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.project.selected {
+  border: 6px solid #95B926;
+  float: left;
+  height: 135px;
+  margin: 5px -2px -3px 5px;
+  padding-top: 20px;
+  text-align: center;
+  width: 115px ;/*!important;/* jack */
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.project_add {
+  background-color: #FFFFFF;
+  background-image: url("");
+  background-repeat: no-repeat;
+  border: 1px solid #CECECE;
+  float: left;
+  height: 160px;
+  margin-left: 7px;
+  margin-top: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  width: 121px;
+  
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.project_add:hover {
+  border: 6px solid #A5A5A5;
+  cursor: pointer;
+  float: left;
+  height: 155px;
+  padding-top: 0px;
+  text-align: center;
+  width: 115px;
+}
+
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.project_add.selected {
+  border: 6px solid #95B926;
+  float: left;
+  height: 155px;
+  margin: 5px -2px -3px 5px;
+  padding-top: 0px;
+  text-align: center;
+  width: 115px ;/*!important;/* jack */
+}
+/*
+#DropMeLeftSide0 #DropMe_Page0_1 ul li p {
+    padding-top: 10px;
+}*/
+/* 2014.4.28. jack */
+#DropMeLeftSide0 #DropMe_Page0_1 ul li p {
+  height: 20px;
+  /*overflow: hidden;*/
+  padding-top: 20px;
+  margin-top: 125px;
+}
+#DropMeLeftSide0 #DropMe_Page0_2 ul li p {
+  height: 20px;
+  /*overflow: hidden;*/
+  padding-top: 20px;
+  margin-top: 125px;
+}
+#DropMeLeftSide0 #DropMe_Page_3 ul li p {
+  height: 20px;
+  /*overflow: hidden;*/
+  padding-top: 20px;
+  margin-top: 125px;
+}
+/*
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.selected {
+    border: 6px solid #95B926;
+    float: left;
+    height: 35px;
+    margin: 5px -2px -3px 5px;
+    padding-top: 119px;
+    text-align: center;
+    width: 115px;
+}*/
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.last.selected, #DropMeLeftSide0 #DropMe_Page0_1 ul li.last:hover {
+    cursor: pointer;
+    margin: 5px -2px -2px 5px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.MusicSocial {
+    background-image: none;
+    display: none;
+    height: 90px;
+    padding: 0 0 0 5px;
+    width: 507px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.MusicSocial:hover {
+    border: 1px solid #CECECE;
+    cursor: default;
+    display: none;
+    height: 90px;
+    margin: 7px 0 0 7px;
+    padding: 0 0 0 5px;
+    width: 507px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.MusicSocial a {
+    background-image: url("http://mobile.conduit.com/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/new.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 35px;
+    text-decoration: none;
+    width: 142px;
+}
+#DropMeLeftSide0 .bandPage {
+    background-position: -200px -695px;
+}
+#DropMeLeftSide0 .soundCloud {
+    background-position: -33px -695px;
+}
+#DropMeLeftSide0 .musicFB {
+    background-position: -352px -695px;
+    width: 208px !important;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.MusicSocial p {
+    padding-left: 3px;
+    text-align: left;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Bussiness {
+    background-position: -36px -328px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Bussiness.selected, #DropMeLeftSide0 #DropMe_Page0_1 ul li.Bussiness:hover {
+    background-position: -39px -331px;
+    cursor: pointer;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Music {
+    background-position: -166px -328px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Music.selected, #DropMeLeftSide0 #DropMe_Page0_1 ul li.Music:hover {
+    background-position: -169px -331px;
+    cursor: pointer;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Events {
+    background-position: -296px -328px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Events.selected, #DropMeLeftSide0 #DropMe_Page0_1 ul li.Events:hover {
+    background-position: -299px -331px;
+    cursor: pointer;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Restaurants {
+    background-position: -426px -328px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Restaurants.selected, #DropMeLeftSide0 #DropMe_Page0_1 ul li.Restaurants:hover {
+    background-position: -429px -331px;
+    cursor: pointer;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Blog {
+    background-position: -36px -497px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Blog.selected, #DropMeLeftSide0 #DropMe_Page0_1 ul li.Blog:hover {
+    background-position: -39px -500px;
+    cursor: pointer;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Education {
+    background-position: -166px -497px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Education.selected, #DropMeLeftSide0 #DropMe_Page0_1 ul li.Education:hover {
+    background-position: -169px -500px;
+    cursor: pointer;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Photography {
+    background-position: -296px -497px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Photography.selected, #DropMeLeftSide0 #DropMe_Page0_1 ul li.Photography:hover {
+    background-position: -299px -500px;
+    cursor: pointer;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Other {
+    background-position: -426px -497px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 ul li.Other.selected, #DropMeLeftSide0 #DropMe_Page0_1 ul li.Other:hover {
+    background-position: -429px -500px;
+    cursor: pointer;
+}
+#DropMeLeftSide0 .step h2 {
+            color: #333333;
+            font-family: 'MuseoSans-300';
+            font-size: 33px;
+            font-weight: normal;
+            left: 41px;
+            letter-spacing: 1.4pt;
+            margin-top: 10px;
+            padding: 0;
+            position: relative;
+            top: 34px;
+            word-spacing: -3pt;
+}
+
+#DropMeLeftSide0 .AppNamePreviewTitle {
+    background-color: #272727;
+    color: #FFFFFF;
+    display: block;
+    font-family: helvetica,arial;
+    font-size: 23px;
+    font-weight: bold;
+    height: 36px;
+    left: 30px;
+    line-height: 26px;
+    overflow: hidden;
+    padding-top: 8px;
+    position: absolute;
+    text-align: center;
+    top: 148px;
+    width: 321px;
+}
+#DropMeLeftSide0 .PhoneContent {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 415px;
+    left: 30px;
+    position: relative;
+    top: 192px;
+    width: 320px;
+}
+#DropMeLeftSide0 .letsStartBuilding {
+    background-image: url("http://mobile.conduit.com/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/StartBuilding.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 133px;
+    position: relative;
+    top: -129px;
+}
+#DropMeLeftSide0 .phoneIcon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90px auto;
+    display: none;
+    height: 90px;
+    left: 139px;
+    position: absolute;
+    top: 290px;
+    width: 90px;
+}
+#DropMeLeftSide0 .defaultText {
+    background-clip: padding-box;
+    border: 1px solid #D0D0D0;
+    border-radius: 3px;
+    font-size: 20px;
+    height: 41px;
+    left: 40px;
+    padding-left: 10px;
+    position: absolute;
+    top: 102px;
+    width: 351px;
+}
+#DropMeLeftSide0 .defaultTextActive {
+    color: #A1A1A1;
+    font-style: italic;
+}
+
+#DropMeLeftSide0 #DropMe_Page0_1,#DropMeLeftSide0 #DropMe_Page0_2,#DropMeLeftSide0 #DropMe_Page_3{
+    height: auto;
+}
+#DropMeLeftSide0 #myPages .item {
+    margin: 0 4px 30px;
+}
+#DropMeLeftSide0 .discoveryLoader {
+    bottom: 60px;
+    display: none;
+}
+#DropMeLeftSide0 .discoveryLoader {
+    background: url("/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/discoveryLoader.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+    bottom: 260px;
+    height: 24px;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    width: 120px;
+}
+#DropMeLeftSide0 .segmentBodyBgImage {
+    background-position: center -10px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+#DropMeLeftSide0 .PhoneContentOverlay {
+    background-color: #000000;
+    height: 417px;
+    left: 30px;
+    opacity: 0.7;
+    position: absolute;
+    top: 192px;
+    width: 320px;
+}
+#DropMeLeftSide0 .empty {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 12px;
+    height: 49px;
+    left: 371px;
+    padding: 16px 12px 9px;
+    position: absolute;
+    top: -29px;
+    width: 180px;
+    z-index: 2;
+}
+#DropMeLeftSide0 .empty a {
+    color: #018DFF;
+}
+#DropMeLeftSide0 #myPages .item span {
+    color: #FFFFFF !important;
+}
+
+#DropMeLeftSide0 .wrongUrl {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 12px;
+    height: 39px;
+    left: 71px;
+    padding: 16px 12px 9px;
+    position: absolute;
+    top: 105px;
+    width: 250px;
+    z-index: 2;
+}
+#DropMeLeftSide0 .borderTriangle {
+    border-bottom: 12px solid #CCCCCA;
+    border-left: 12px solid rgba(0, 0, 0, 0);
+    border-right: 12px solid rgba(0, 0, 0, 0);
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+#DropMeLeftSide0 .triangle {
+    border-bottom: 11px solid #F8F8F8;
+    border-left: 11px solid rgba(0, 0, 0, 0);
+    border-right: 11px solid rgba(0, 0, 0, 0);
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 .triangle {
+    left: 25px;
+    top: -11px;
+}
+#DropMeLeftSide0 #DropMe_Page0_1 .borderTriangle {
+    left: 24px;
+    top: -12px;
+}
+#DropMeLeftSide0 #DropMe_Page0_2 .triangle {
+    left: 187px;
+    top: -11px;
+}
+#DropMeLeftSide0 #DropMe_Page0_2 .borderTriangle {
+    left: 186px;
+    top: -12px;
+}
+#DropMeLeftSide0 #DropMe_Page_3 .triangle {
+    left: 348px;
+    top: -11px;
+}
+#DropMeLeftSide0 #DropMe_Page_3 .borderTriangle {
+    left: 347px;
+    top: -12px;
+}
+#DropMeLeftSide0 #DropMe_Page_3 .triangle {
+    left: 348px;
+    top: -11px;
+}
+#DropMeLeftSide0 #DropMe_Page_3 .borderTriangle {
+    left: 347px;
+    top: -12px;
+}
+#DropMe_Page0_1_Project , #DropMe_Page0_2_Project{
+    word-break: break-all;
+}

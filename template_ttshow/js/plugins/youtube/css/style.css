@@ -1,0 +1,102 @@
+
+body {
+    overflow: hidden;
+    padding: 10px;
+}
+.mce-panel {
+    background-color: #f0f0f0;
+    background-image: linear-gradient(to bottom, #fdfdfd, #ddd);
+    background-repeat: repeat-x;
+    border: 0 solid #9e9e9e;
+}
+a:focus, a:active {
+    outline: 0 none;
+}
+a {
+    color: #555;
+    text-decoration: none;
+}
+a img {
+    border: medium none;
+}
+#preview {
+    float: right;
+    height: 240px;
+    width: 300px;
+}
+.listbox {
+    width: 400px;
+}
+.listboxText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 225px;
+}
+ul {
+    list-style-type: none;
+}
+ul.autocomplete {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e4e4e4;
+    display: none;
+    left: 132px;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    z-index: 9999;
+}
+ul.autocomplete li a {
+    color: #333;
+    display: block;
+    font-size: 11px;
+    padding: 5px 10px;
+}
+ul.autocomplete li a:hover {
+    background: #f5f5f5 none repeat scroll 0 0;
+}
+#load_more {
+    display: none;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#divScroll {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 380px;
+    margin: 0 0 10px;
+    overflow: auto;
+}
+.videos {
+    margin: 0;
+    padding: 0;
+}
+.videos.preloader {
+    background: rgba(0, 0, 0, 0) url("") no-repeat scroll center center;
+    height: 370px;
+}
+ul.videos li {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 5px;
+    float: left;
+    margin: 1%;
+    padding: 10px;
+    width: 98%;
+}
+ul.videos li p {
+    margin: 0;
+    padding: 0;
+}
+.videos small {
+    color: #acacac;
+    display: block;
+    font-weight: 400;
+}
+.insert {
+    margin-left: 10px;
+}
+.videos img {
+    max-width: 137px;
+}

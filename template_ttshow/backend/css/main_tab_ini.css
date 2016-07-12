@@ -1,0 +1,864 @@
+
+@media screen and (min-width: 1200px) {
+    // 如果使用者之視窗寬度 >= 1200px，將會再載入這裡的 CSS。
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    // 如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS。    
+}
+
+@media screen and (max-width: 767px) {
+    // 如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS。    
+}
+
+@media screen and (max-device-width: 480px) {
+    // 如果使用者之裝置寬度 <= 480px，將會再載入這裡的 CSS。 
+}
+
+
+            #LeftSide {
+                        height: 600px;
+                        position: relative;
+                        width: 100%;
+            }
+            
+            /*
+            #LeftSide {
+                position: relative;
+                width: 560px;
+            }
+
+            #rightSide {
+                        height: 731px;
+                        margin-left: 600px;
+                        position: relative;
+                        width: 1200px;
+            }
+            /*
+            #rightSide {
+                        background-color: #1E1E1E;
+                        background-image: url("http://mobile.conduit.com/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/DiscoveryPhone.png");
+                        background-repeat: no-repeat;
+                        height: 731px;
+                        margin-left: 600px;
+                        position: relative;
+                        width: 372px;
+            }
+            /*
+            #rightSide 
+            {
+                        background-color: #1E1E1E;
+                        background-image: url("http://mobile.conduit.com/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/DiscoveryPhone.png");
+                        background-repeat: no-repeat;
+                        height: 731px;
+                        position: relative;
+                        width: 372px;
+            }*/
+            #Page_2 .NextBtn {
+                        margin-right: 50px;
+                        margin-top: 210px;
+                        
+                        z-index: 1;
+                        
+            }
+            /*
+            #Page_2 .NextBtn
+            {
+                        margin-top: 45px; margin-left: 413px;
+            }*/
+            
+            #Page_1 .NextBtn {
+                        float: right;
+                        margin-right: 50px;
+                        margin-top: 30px;
+            }
+              /*
+            #Page_1 .NextBtn
+            {
+                        margin-top: 63px; margin-left: 480px;
+            }*/
+            
+            
+span.loadingSearch {
+        background-color: #FF0000;
+        background-image: url("/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/BodyPixel.jpg");
+        background-repeat: no-repeat;
+        display: block;
+        height: 40px;
+        width: 40px;
+}
+
+.mainContaner {
+    margin: 0 auto;
+    position: relative;
+    width: 972px;
+}
+.pageHead {
+    height: 156px;
+}
+.Logo {
+    display: block;
+    padding: 9px 0 0;
+}
+.AppNameTitle {
+    background-image: url("/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/DefaultIcon.jpg");
+    background-position: 7px 3px;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: block;
+    font-family: verdana;
+    font-size: 22px;
+    height: 90px;
+    padding-left: 88px;
+    padding-top: 19px;
+    text-transform: capitalize;
+}
+ul#Pager {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 12px;
+}
+ul#Pager li {
+    background-image: url("http://mobile.conduit.com/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/new.png");
+    background-repeat: no-repeat;
+    float: left;
+    font-weight: bold;
+    height: 50px;
+    margin-right: 10px;
+    padding: 24px 0 0 60px;
+    width: 92px;
+    
+    cursor: pointer;
+    
+}
+
+ul#Pager li.finish {
+    cursor: pointer;
+}
+ul#Pager li.name {
+    background-position: -37px -170px;
+}
+ul#Pager li.name.start {
+    background-position: -37px -89px;
+}
+ul#Pager li.name.finish {
+    background-position: -529px -172px;
+}
+ul#Pager li.type {
+    background-position: -195px -6px;
+}
+ul#Pager li.type.start {
+    background-position: -195px -172px;
+}
+ul#Pager li.type.finish {
+    background-position: -529px -172px;
+}
+ul#Pager li.create {
+    background-position: -352px -6px;
+}
+ul#Pager li.create.start {
+    background-position: -352px -89px;
+}
+ul#Pager li.create.finish {
+    background-position: -529px -172px;
+}
+.divFloatContainer {
+    clear: both;
+    display: block;
+    float: none;
+}
+.divFloatContainer img {
+    /*height: 30%;
+    float: left;*/
+}
+.divFloatContainer:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    
+    display: none;
+}
+
+.step {
+    background-color: #FFFFFF;
+    /*border: 1px solid #FFCCCA;*/
+    margin-bottom: 50px;
+    position: absolute;
+    /*top: 74px;*/
+    width: 100%;
+    height: auto;
+}
+
+
+#Page_2_yourproject{
+    padding-top: 40px;
+}
+
+
+#Page_1 {
+    padding: 0 0 40px;
+}
+#Page_1 ul {
+            left: 0px;
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 10px;
+            width: 98%;
+}
+#Page_1 ul li.project a.label {
+  left:0;
+}
+#Page_1 ul li img
+{
+    height: 96%;
+}
+
+
+#Page_1 ul li.project {
+            background-color: #FFFFFF;
+            background-image: url("");
+            background-repeat: no-repeat;
+            border: 1px solid #CECECE;
+            float: left;
+            height: 131px;
+            margin-left: 10px;
+            margin-top: 60px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            width: 102px;
+            text-align: center;
+}
+
+#Page_1 ul li.project:hover {
+            border: 6px solid #A5A5A5;
+            cursor: pointer;
+            float: left;
+            height: 133px;
+            margin-left: 8px;
+            margin-top: 58px;
+            padding-top: 3px;
+            text-align: center;
+            width: 104px;
+}
+
+#Page_1 ul li.project:hover div{
+            height : 118px;
+            width  :  87px;
+}
+#Page_1 ul li.project.selected {
+            border: 6px solid #95B926;
+            float: left;
+            height: 131px;
+            margin: 60px -2px -3px 8px; /*58px -2px -3px 48px; jack*/
+            padding-top: 5px;
+            text-align: center;
+            width: 107px;
+}
+#Page_1 ul li.project.removed {
+            border: 6px solid #5bb75b;
+            /*border: 6px solid #ff6347;*/
+            float: left;
+            
+            padding-top: 0px;
+            text-align: center;
+            height: 131px;
+            width: 107px;/*!important;/* jack */
+}
+
+#Page_1 ul li.project div 
+{
+            background-position: 50% 25%;
+            background-size: cover;
+            height: 119px;
+            position: absolute;
+            width: 90px;
+}
+
+#Page_1 ul li.project.selected div {
+            height: 113px;
+            width:   85px;
+}
+
+#Page_1 ul li.project.removed div {
+            height: 120px;
+            width:   93px;
+}
+#Page_1 ul li.project div:hover {
+            height: 113px;
+            width:   85px;
+}
+
+#Page_1 ul li.project_add {
+  background-color: #FFFFFF;
+  background-image: url("");
+  background-repeat: no-repeat;
+  border: 1px solid #CECECE;
+  float: left;
+  height: 131px;
+  margin-left: 8px;
+  margin-top: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  width: 107px;
+  
+}/*
+#Page_1 ul li.project_add {
+  background-color: #FFFFFF;
+  background-image: url("");
+  background-repeat: no-repeat;
+  border: 1px solid #CECECE;
+  float: left;
+  height: 131px;
+  margin-left: 8px;
+  margin-top: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  width: 107px;
+  
+}*/
+#Page_1 ul li.project_add p {
+  color: #2996cc;
+}
+/*
+#Page_1 ul li.project_add:hover {
+  border: 6px solid #A5A5A5;
+  cursor: pointer;
+  float: left;
+  height: 155px;
+  padding-top: 0px;
+  text-align: center;
+  width: 107px;
+  
+  margin-left: 46px;
+  
+}*/
+
+#Page_1 ul li.project_add.selected {
+    border: 6px solid #95B926;
+    float: left;
+    height: 131px;
+    margin: 60px -2px -3px 6px;
+    padding-top: 0px;
+    text-align: center;
+    width: 107px ;/*!important;/* jack */
+}
+
+#Page_1 ul li.project_add div {
+    
+  background-position: 50% 25%;
+  background-size: cover;
+  height: 109px;
+  position: absolute;
+  width: 90px;
+
+}
+
+#Page_1 ul li p {
+    padding-top: 126px;
+    text-align: center;
+}/*
+#Page_1 ul li:hover {
+    border: 6px solid #A5A5A5;
+    cursor: pointer;
+    float: left;
+    height: 36px;
+    margin: 27px -2px -3px 5px;
+    padding-top: 119px;
+    text-align: center;
+    width: 115px;
+}
+/*
+#Page_1 ul li.selected {
+    border: 6px solid #95B926;
+    float: left;
+    height: 35px;
+    margin: 5px -2px -3px 5px;
+    padding-top: 119px;
+    text-align: center;
+    width: 115px;
+}*/
+#Page_1 ul li.last.selected, #Page_1 ul li.last:hover {
+    cursor: pointer;
+    margin: 5px -2px -2px 5px;
+}
+#Page_1 ul li.MusicSocial {
+    background-image: none;
+    display: none;
+    height: 90px;
+    padding: 0 0 0 5px;
+    width: 507px;
+}
+#Page_1 ul li.MusicSocial:hover {
+    border: 1px solid #CECECE;
+    cursor: default;
+    display: none;
+    height: 90px;
+    margin: 7px 0 0 7px;
+    padding: 0 0 0 5px;
+    width: 507px;
+}
+#Page_1 ul li.MusicSocial a {
+    background-image: url("http://mobile.conduit.com/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/new.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 35px;
+    text-decoration: none;
+    width: 142px;
+}
+.bandPage {
+    background-position: -200px -695px;
+}
+.soundCloud {
+    background-position: -33px -695px;
+}
+.musicFB {
+    background-position: -352px -695px;
+    width: 208px !important;
+}
+#Page_1 ul li.MusicSocial p {
+    padding-left: 3px;
+    text-align: left;
+}
+#Page_1 ul li.Bussiness {
+    background-position: -36px -328px;
+}
+#Page_1 ul li.Bussiness.selected, #Page_1 ul li.Bussiness:hover {
+    background-position: -39px -331px;
+    cursor: pointer;
+}
+#Page_1 ul li.Music {
+    background-position: -166px -328px;
+}
+#Page_1 ul li.Music.selected, #Page_1 ul li.Music:hover {
+    background-position: -169px -331px;
+    cursor: pointer;
+}
+#Page_1 ul li.Events {
+    background-position: -296px -328px;
+}
+#Page_1 ul li.Events.selected, #Page_1 ul li.Events:hover {
+    background-position: -299px -331px;
+    cursor: pointer;
+}
+#Page_1 ul li.Restaurants {
+    background-position: -426px -328px;
+}
+#Page_1 ul li.Restaurants.selected, #Page_1 ul li.Restaurants:hover {
+    background-position: -429px -331px;
+    cursor: pointer;
+}
+#Page_1 ul li.Blog {
+    background-position: -36px -497px;
+}
+#Page_1 ul li.Blog.selected, #Page_1 ul li.Blog:hover {
+    background-position: -39px -500px;
+    cursor: pointer;
+}
+#Page_1 ul li.Education {
+    background-position: -166px -497px;
+}
+#Page_1 ul li.Education.selected, #Page_1 ul li.Education:hover {
+    background-position: -169px -500px;
+    cursor: pointer;
+}
+#Page_1 ul li.Photography {
+    background-position: -296px -497px;
+}
+#Page_1 ul li.Photography.selected, #Page_1 ul li.Photography:hover {
+    background-position: -299px -500px;
+    cursor: pointer;
+}
+#Page_1 ul li.Other {
+    background-position: -426px -497px;
+}
+#Page_1 ul li.Other.selected, #Page_1 ul li.Other:hover {
+    background-position: -429px -500px;
+    cursor: pointer;
+}
+.step h2 {
+            color: #333333;
+            font-family: 'MuseoSans-300';
+            font-size: 33px;
+            font-weight: normal;
+            left: 41px;
+            letter-spacing: 1.4pt;
+            margin-top: 10px;
+            padding: 0;
+            position: relative;
+            top: 34px;
+            word-spacing: -3pt;
+}
+
+.AppNamePreviewTitle {
+    background-color: #272727;
+    color: #FFFFFF;
+    display: block;
+    font-family: helvetica,arial;
+    font-size: 23px;
+    font-weight: bold;
+    height: 36px;
+    left: 30px;
+    line-height: 26px;
+    overflow: hidden;
+    padding-top: 8px;
+    position: absolute;
+    text-align: center;
+    top: 148px;
+    width: 321px;
+}
+.PhoneContent {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 415px;
+    left: 30px;
+    position: relative;
+    top: 192px;
+    width: 320px;
+}
+.letsStartBuilding {
+    background-image: url("http://mobile.conduit.com/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/StartBuilding.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 133px;
+    position: relative;
+    top: -129px;
+}
+.phoneIcon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90px auto;
+    display: none;
+    height: 90px;
+    left: 139px;
+    position: absolute;
+    top: 290px;
+    width: 90px;
+}
+
+#Page_3 {
+    height: 233px;
+}
+#myPages .item {
+    margin: 0 4px 30px;
+}
+.discoveryLoader {
+    bottom: 60px;
+    display: none;
+}
+.discoveryLoader {
+    background: url("/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/discoveryLoader.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+    bottom: 260px;
+    height: 24px;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    width: 120px;
+}
+.segmentBodyBgImage {
+    background-position: center -10px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.PhoneContentOverlay {
+    background-color: #000000;
+    height: 417px;
+    left: 30px;
+    opacity: 0.7;
+    position: absolute;
+    top: 192px;
+    width: 320px;
+}
+.empty {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 12px;
+    height: 49px;
+    left: 371px;
+    padding: 16px 12px 9px;
+    position: absolute;
+    top: -29px;
+    width: 180px;
+    z-index: 2;
+}
+.empty a {
+    color: #018DFF;
+}
+#myPages .item span {
+    color: #FFFFFF !important;
+}
+
+.wrongUrl {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 12px;
+    height: 39px;
+    left: 71px;
+    padding: 16px 12px 9px;
+    position: absolute;
+    top: 105px;
+    width: 250px;
+    z-index: 2;
+}
+.borderTriangle {
+    border-bottom: 12px solid #CCCCCA;
+    border-left: 12px solid rgba(0, 0, 0, 0);
+    border-right: 12px solid rgba(0, 0, 0, 0);
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.triangle {
+    border-bottom: 11px solid #F8F8F8;
+    border-left: 11px solid rgba(0, 0, 0, 0);
+    border-right: 11px solid rgba(0, 0, 0, 0);
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+#Page_1 .triangle {
+    left: 25px;
+    top: -11px;
+}
+#Page_1 .borderTriangle {
+    left: 24px;
+    top: -12px;
+}
+#Page_2 .triangle {
+    left: 187px;
+    top: -11px;
+}
+#Page_2 .borderTriangle {
+    left: 186px;
+    top: -12px;
+}
+#Page_3 .triangle {
+    left: 348px;
+    top: -11px;
+}
+#Page_3 .borderTriangle {
+    left: 347px;
+    top: -12px;
+}
+#Page_3 .triangle {
+    left: 348px;
+    top: -11px;
+}
+#Page_3 .borderTriangle {
+    left: 347px;
+    top: -12px;
+}
+
+
+/***********************************************/
+#MyTemplateLeftSide
+{
+    position: relative;
+}
+
+#MyTemplate_Page_1 {
+    padding: 0 0 40px;
+}
+#MyTemplate_Page_1 ul {
+            left: 0px;
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 10px;
+            width: 98%;
+}
+#MyTemplate_Page_1 ul li.project a.label {
+  left:0;
+}
+#MyTemplate_Page_1 ul li img
+{
+    height: 96%;
+}
+
+
+            
+#MyTemplate_Page_1 ul li.project {
+            background-color: #ffffff;
+            background-image: url("");
+            background-repeat: no-repeat;
+            float: left;
+            height: 133px;
+            margin-left: 10px;
+            margin-top: 60px;
+            text-align: center;
+            width: 6%;
+}
+
+#MyTemplate_Page_1 ul li.project:hover {
+            border: 6px solid #A5A5A5;
+            cursor: pointer;
+            float: left;
+            height: 133px;
+            margin-left: 8px;
+            margin-top: 58px;
+            padding-top: 3px;
+            text-align: center;
+            width: 104px;
+}
+
+#MyTemplate_Page_1 ul li.project:hover div{
+            height : 118px;
+            width  :  87px;
+}
+#MyTemplate_Page_1 ul li.project.selected {
+            border: 6px solid #95B926;
+            float: left;
+            height: 131px;
+            margin: 60px -2px -3px 8px; /*58px -2px -3px 48px; jack*/
+            padding-top: 5px;
+            text-align: center;
+            width: 107px;
+}
+#MyTemplate_Page_1 ul li.project.removed {
+            border: 6px solid #5bb75b;
+            /*border: 6px solid #ff6347;*/
+            float: left;
+            
+            padding-top: 5px;
+            text-align: center;
+            height: 131px;
+            width: 107px;/*!important;/* jack */
+}
+
+#MyTemplate_Page_1 ul li.project div 
+{
+            background-position: 50% 25%;
+            background-size: cover;
+            height: 119px;
+            position: absolute;
+            width: 6%;
+}
+
+#MyTemplate_Page_1 ul li.project.selected div {
+            height: 113px;
+            width:   85px;
+}
+
+#MyTemplate_Page_1 ul li.project.removed div {
+            height: 113px;
+            width:   85px;
+}
+#MyTemplate_Page_1 ul li.project div:hover {
+            height: 113px;
+            width:   85px;
+}
+
+#MyTemplate_Page_1 ul li.project_add {
+  background-color: #FFFFFF;
+  background-image: url("");
+  background-repeat: no-repeat;
+  border: 1px solid #CECECE;
+  float: left;
+  height: 131px;
+  margin-left: 8px;
+  margin-top: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  width: 107px;
+  
+}/*
+#MyTemplate_Page_1 ul li.project_add {
+  background-color: #FFFFFF;
+  background-image: url("");
+  background-repeat: no-repeat;
+  border: 1px solid #CECECE;
+  float: left;
+  height: 131px;
+  margin-left: 8px;
+  margin-top: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  width: 107px;
+  
+}*/
+#MyTemplate_Page_1 ul li.project_add p {
+  color: #2996cc;
+}
+/*
+#MyTemplate_Page_1 ul li.project_add:hover {
+  border: 6px solid #A5A5A5;
+  cursor: pointer;
+  float: left;
+  height: 155px;
+  padding-top: 0px;
+  text-align: center;
+  width: 107px;
+  
+  margin-left: 46px;
+  
+}*/
+
+#MyTemplate_Page_1 ul li.project_add.selected {
+    border: 6px solid #95B926;
+    float: left;
+    height: 131px;
+    margin: 60px -2px -3px 6px;
+    padding-top: 0px;
+    text-align: center;
+    width: 107px ;/*!important;/* jack */
+}
+
+#MyTemplate_Page_1 ul li.project_add div {
+    
+  background-position: 50% 25%;
+  background-size: cover;
+  height: 109px;
+  position: absolute;
+  width: 90px;
+
+}
+
+#MyTemplate_Page_1 ul li p {
+    padding-top: 126px;
+    text-align: center;
+}/*
+#MyTemplate_Page_1 ul li:hover {
+    border: 6px solid #A5A5A5;
+    cursor: pointer;
+    float: left;
+    height: 36px;
+    margin: 27px -2px -3px 5px;
+    padding-top: 119px;
+    text-align: center;
+    width: 115px;
+}
+/*
+#MyTemplate_Page_1 ul li.selected {
+    border: 6px solid #95B926;
+    float: left;
+    height: 35px;
+    margin: 5px -2px -3px 5px;
+    padding-top: 119px;
+    text-align: center;
+    width: 115px;
+}*/
+#MyTemplate_Page_1 ul li.last.selected, #MyTemplate_Page_1 ul li.last:hover {
+    cursor: pointer;
+    margin: 5px -2px -2px 5px;
+}

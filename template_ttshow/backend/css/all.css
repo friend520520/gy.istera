@@ -1,0 +1,179 @@
+
+@import "bootstrap.css" ;/*bootstrap 3.1.1  hao*/
+@import "dist/ladda-themeless.min.css" ;
+
+@import "dataTables/jquery.dataTables.css" ;/*bohan 0710  */
+@import "dataTables/shCore.css" ;/*bohan 0710  */
+
+@import "timeliner/screen.css" ;
+
+
+@import "layoutit.css" ;/*layoutit v3 css  hao*/
+
+@import "view_icon.css";
+/*Hao 05222*/
+
+
+@import "main_tab.css" ;
+/* < 1999px */
+@import "main_tab_bg.css" ;
+/* 1500px ~ 1999px */
+@import "main_tab_md.css" ;
+/* 1000px ~ 1499px */
+@import "main_tab_md2.css" ;
+/* 600px ~ 999px */
+@import "main_tab_sm.css" ;
+/* < 600px */
+@import "main_tab_sm_phone.css" ;
+
+
+@import "nestable_css.css";
+
+@import "upload_css.css";
+/*bohan++ 20140406*/
+@import "bohan_css.css" ;
+@import "main_tab_DropMe_tab.css" ;
+@import "main_tab_DropMe_tab0.css" ;
+/*bohan-- 20140406*/
+
+
+@import "fliper/jquery.ui.css" ;
+@import "fliper/steve-jobs.css" ;
+
+
+@import "CSSBeautifier_codemirror.css" ;
+@import "CSSBeautifier_style.css" ;
+
+@import "animation.css" ;
+
+@import "timeliner/screen.css" ;
+
+/***** highcharts-scrollbar *****/
+.highcharts-scrollbar{
+        cursor: pointer;
+}
+
+/*************************************************************************************************/
+
+/*bootstrap2 navbar */
+.booov2 .navbar-fixed-top {
+    top: 0;
+}
+.booov2 .navbar {
+    margin-bottom: 20px;
+    overflow: visible;
+}
+.booov2 .navbar-fixed-top, .booov2 .navbar-fixed-bottom {
+    left: 0;
+    margin-bottom: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1030;
+}
+.booov2 .navbar-inner:before,.booov3 .navbar-inner:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+
+.booov2.navbar-inner:after {
+    clear: both;
+}
+.booov2 .navbar-fixed-top,.booov2 .navbar-fixed-bottom {
+    left: 0;
+    margin-bottom: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1030;
+}
+.booov2 .navbar-fixed-top .booov2 .navbar-inner, .booov2 .navbar-static-top .navbar-inner {
+    border-width: 0 0 1px;
+}
+.booov2 .navbar-fixed-bottom .navbar-inner {
+    border-width: 1px 0 0;
+}
+.booov2 .navbar-fixed-top .booov2 .navbar-inner, .booov2 .navbar-fixed-bottom .booov2 .navbar-inner {
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.booov2 .navbar-static-top .booov2 .container, .booov2 .navbar-fixed-top .booov2 .container, .booov2 .navbar-fixed-bottom .booov2 .container {
+    width: 940px;
+}
+.booov2 .navbar-fixed-top {
+    top: 0;
+}
+.booov2 .navbar-fixed-top .booov2 .navbar-inner, .booov2 .navbar-static-top .booov2 .navbar-inner {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.booov2 .navbar-fixed-bottom {
+    bottom: 0;
+}
+.booov2 .navbar-fixed-bottom .booov2 .navbar-inner {
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* a bin 2014.06.03 ++ */
+.image_slider_tv {
+    background-position: 50% 25%;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+
+.img-thumbnail .photo {
+    background-position: 50% 25%;
+    background-size: cover;
+    float: left;
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+
+.img-thumbnail {
+    display: block;
+    /*
+    height: auto;
+    width: 100%;
+    */
+}
+
+.button-3D {
+        background-color: rgba(100, 100, 100, 1);
+        box-shadow: 0 9px 0 rgba(219, 219, 219, 1), 0 9px 25px rgba(0, 0, 0, 0.7);
+        border: 4px solid gray;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        
+        background-position: 50% 25%;
+        background-size: cover;
+}
+
+.button-3D:active {
+        box-shadow: 0 3px 0 rgba(219, 219, 219, 1), 0 3px 6px rgba(0, 0, 0, 0.9);
+        position: relative;
+        top: 10px;
+}
+/* a bin 2014.06.03 -- */
+
+
+
+
+
+.mainPhoto {
+    background-position : 50% 25%;
+    background-size     : cover;
+    float               : left;
+    height              : 137px;
+    position            : relative;
+    width               : 108px;
+}
+
+#main_container .drag.label-default
+{
+        margin-right: 0px !important;
+}

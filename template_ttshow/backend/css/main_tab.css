@@ -1,0 +1,95 @@
+
+            #LeftSide {
+                        position: relative;
+                        width: 100%;
+            }
+            
+            #Page_2 .NextBtn {
+                        margin-right: 50px;
+                        margin-top: 210px;
+                        
+                        z-index: 1;
+                        
+            }
+            
+            #Page_1 .NextBtn {
+                        float: right;
+                        margin-right: 50px;
+                        margin-top: 30px;
+            }
+                  
+            span.loadingSearch {
+                    background-color: #FF0000;
+                    background-image: url("/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/BodyPixel.jpg");
+                    background-repeat: no-repeat;
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+            }
+
+            .mainContaner {
+                        margin: 0 auto;
+                        position: relative;
+                        width: 972px;
+            }
+            .pageHead {
+                        height: 156px;
+            }
+            .Logo {
+                        display: block;
+                        padding: 9px 0 0;
+            }
+            .AppNameTitle {
+                        background-image: url("/Images/Mobile/Marketing/NewDesign/GoWithTheFlowPage/DefaultIcon.jpg");
+                        background-position: 7px 3px;
+                        background-repeat: no-repeat;
+                        color: #FFFFFF;
+                        display: block;
+                        font-family: verdana;
+                        font-size: 22px;
+                        height: 90px;
+                        padding-left: 88px;
+                        padding-top: 19px;
+                        text-transform: capitalize;
+            }
+            .step {
+                        background-color: #FFFFFF;
+                        /*border: 1px solid #FFCCCA;*/
+                        margin-bottom: 50px;
+                        position: absolute;
+                        /*top: 74px;*/
+                        width: 100%;
+                        height: auto;
+            }
+     
+            .defaultText {
+                        background-clip: padding-box;
+                        border: 1px solid #d0d0d0;
+                        border-radius: 3px;
+                        font-size: 20px;
+                        height: 36px;
+                        left: 40px;
+                        padding-left: 10px;
+                        position: absolute;
+                        top: 75%;
+                        width: 351px;
+            }
+            
+            /*
+            .defaultText {
+                        background-clip: padding-box;
+                        border: 1px solid #D0D0D0;
+                        border-radius: 3px;
+                        font-size: 20px;
+                        height: 41px;
+                        left: 40px;
+                        padding-left: 10px;
+                        position: absolute;
+                        top: 74%;
+                        width: 351px;
+            }*/
+            
+            .defaultTextActive {
+                        color: #A1A1A1;
+                        font-style: italic;
+            }

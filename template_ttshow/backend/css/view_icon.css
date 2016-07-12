@@ -1,0 +1,32 @@
+
+ .icon-prev,
+  .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -120px;
+    margin-left: -15px;
+    font-size: 30px;
+  }
+ .icon-prev
+ {
+  left: 50%;
+}
+.icon-next
+ {
+  right: 50%;
+}
+ .icon-prev,
+.icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-family: serif;
+}
+
+  .icon-prev:before {
+  content: '\2039';
+}
+ .icon-next:before {
+  content: '\203a';
+}

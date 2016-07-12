@@ -1,0 +1,24 @@
+
+/* arod */
+.img-browse{
+    float: left;
+    margin-right: 45px;
+    margin-top: 15px;
+}
+
+.inf-browse{
+    float: left;
+}
+
+header.mast .circle div {
+  background-position: 50% 45%;
+  background-size: cover;
+  border-radius: 10%;
+  height: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  position: absolute;
+  width: 90%;
+}
+
+/* arod */

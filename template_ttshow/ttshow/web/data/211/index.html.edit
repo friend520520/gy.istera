@@ -1,0 +1,27 @@
+<div class="lyrow ui-draggable" style="display: block;">
+                                            <a class="remove label label-danger" href="#close"><i class="glyphglyphicon glyphicon-remove glyphicon"></i> </a>
+                                            <span style="margin-right: -10px;" class="drag label label-default"><i class="glyphicon glyphglyphicon glyphicon-hand-right"></i> </span>
+                                            <span class="configuration"><button class="btn btn-default btn-xs btn-xs" data-toggle="modal" data-target="#myModalbackground">Background</button></span>
+                                            <div class="preview"><input type="text" class="form-control" value="12"></div>
+                                            <div class="view">
+                                                <div class="row-fluid clearfix">
+                                                    <div class="col-md-12 column ui-sortable" hassortable="true"><div class="box box-element ui-draggable" style="display: block;">
+                        <a class="remove label label-danger" href="#close"><i class="glyphicon glyphicon-remove icon-white"></i></a>
+                        <span class="drag label label-default"><i class="glyphicon glyphicon-hand-right"></i></span>
+                                <span class="configuration">
+                                        <!--button type="button" class="btn btn-default btn-xs" data-target="#editorModal" role="button" data-toggle="modal">Edit</button-->
+                                        <button data-toggle="modal" role="button" data-target="#myModalforiframe" class="btn btn-default btn-xs" type="button"> URL </button>
+                                </span>
+                                <div class=" preview drag"><i class="glyphicon glyphicon-film"></i> <b changelanguage="1">YouTube</b> </div>
+                                <div class="view">
+                                        <div class="youtobe_video" style="">
+                                            <div style="text-align: center; margin-right: auto; margin-left: auto; position: relative; float: none" class="col-md-12 col-xs-12 col-lg-12 col-md-12" name="u2_player">
+                                                    <!--iframe style="border: none; margin-left: auto; margin-right: auto; height: 100%; width:100%;" mmid="1" key="video" mmtype="['youtube']" src="//www.youtube.com/embed/oVduJ_y0IRM"></iframe-->
+                                                    <iframe src="//www.youtube.com/embed/8Fuye8kNFSg" mmtype="['youtube']" key="video" mmid="1" style="border: none; margin-left: auto; margin-right: auto; height: 100%; width:100%;"></iframe>
+                                            </div>
+                                        </div>
+                                </div>
+                    </div></div>
+                                                </div>
+                                            </div>
+                                        </div>

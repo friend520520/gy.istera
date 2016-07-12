@@ -1,0 +1,2754 @@
+<html><head>
+        <meta charset="utf-8">
+        <script src="http://code.ypcloud.com/jquery/kernel/jquery-2.0.0.min.js" type="text/javascript"></script>
+<title>待出帳使用明細</title>
+<style type="text/css">&lt;!--
+@import url('http://bill.0800080412.com.tw/tlcc/hicld.css');
+--&gt;</style>
+<script src="http://bill.0800080412.com.tw/tlcc/js/tablesort.js" type="text/JavaScript"></script>
+</head>
+<body>
+<center>
+<br>
+<table width="800">
+<tbody><tr><td align="center"><font style="font-size: 14pt; font-family: 標楷體; font-weight: bolder; color: black;">待出帳使用明細
+</font></td></tr></tbody></table>
+<br>
+<table width="800">
+<tbody><tr>
+<td align="left" colspan="7">設備HN編號 : <font color="navy" style="color: black;">HN55014511</font></td>
+</tr></tbody></table>
+<table width="800" cellspacing="0" cellpadding="3" class="tables">
+<tbody><tr bgcolor="#1E90FF">
+<td width="40%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">服務項目</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">累計<br>單位</font></td>
+<td width="40%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">服務項目</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">累計<br>單位</font></td>
+</tr><tr>
+<td align="left" colspan="4" class="tds"><font color="red" style="color: black;">雲端服務編號 : BS550145110001
+</font></td></tr><tr>
+<td align="left" class="tds">HiCLD30 hicloud 彈性硬碟空間100GB
+</td><td align="right" class="tds">
+29日
+</td><td align="left" colspan="2" class="tds">&nbsp;
+</td></tr><tr>
+<td align="left" colspan="4" class="tds"><font color="red" style="color: red;">雲端服務編號 : BV550145110003
+</font></td></tr><tr>
+<td align="left" class="tds">HiCLD78 系統儲存空間-30G
+</td><td align="right" class="tds">
+29日
+</td><td align="left" class="tds">HiCLD82 標準型Mini-Promotions(Windows)
+</td><td align="right" class="tds">
+28日
+11小時
+</td></tr><tr>
+<td align="left" colspan="4" class="tds"><font color="red" style="color: black;">雲端服務編號 : BV550145110004
+</font></td></tr><tr>
+<td align="left" class="tds">HiCLD78 系統儲存空間-30G
+</td><td align="right" class="tds">
+29日
+</td><td align="left" class="tds">HiCLD83 標準型Mini-Promotions(Linux)
+</td><td align="right" class="tds">
+28日
+11小時
+</td></tr><tr>
+<td align="left" colspan="4" class="tds"><font color="red" style="color: black;">雲端服務編號 : BV550145110007
+</font></td></tr><tr>
+<td align="left" class="tds">HiCLD78 系統儲存空間-30G
+</td><td align="right" class="tds">
+29日
+</td><td align="left" class="tds">HiCLD82 標準型Mini-Promotions(Windows)
+</td><td align="right" class="tds">
+28日
+11小時
+</td></tr><tr>
+<td align="left" colspan="4" class="tds"><font color="red" style="color: black;">雲端服務編號 : BV550145110008
+</font></td></tr><tr>
+<td align="left" class="tds">HiCLD78 系統儲存空間-30G
+</td><td align="right" class="tds">
+12日
+12小時
+</td><td align="left" class="tds">HiCLD82 標準型Mini-Promotions(Windows)
+</td><td align="right" class="tds">
+12日
+12小時
+</td></tr></tbody></table>
+<table width="800">
+<tbody><tr><td align="left"><font color="grey" style="color: black;">
+「hicloud 提供的OS依用戶設定與系統初始設定會定期進行相關的Update / Patch作業，以保障提供的OS為較安全的系統環境，所以即便沒有登入或操作雲伺服器，仍將有部分流量產生。同時，建議用戶租用本服務後，依據所需開啟的服務埠開啟OS內建的個人防火牆/IPTable進行安全的阻隔與開通，甚至針對特定企業聯外IP開啟管理服務埠(SSH,RDP)，用戶亦可租用hicloud CaaS共享式硬體防火牆服務，協助用戶做好安全政策的把關，減少惡意流量的產生。」
+</font></td></tr></tbody></table>
+<br>
+<table width="800" cellspacing="0" cellpadding="3" onclick="sortColumn(event)" class="tables">
+<thead><tr bgcolor="#1E90FF">
+<td width="25%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">服務項目</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">起始日期</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">起始時間</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">終止日期</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">終止時間</font></td>
+<td width="25%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">雲端服務編號</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">數量</font></td>
+</tr></thead><tbody>
+<tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">01:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">01:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">01:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">15:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">15:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">15:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">12:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">12:12:24
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD30    hicloud 彈性硬碟空間100GB
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BS550145110001
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD83    標準型Mini-Promotions(Linux)
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD82    標準型Mini-Promotions(Windows)
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD78    系統儲存空間-30G
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">        1個
+</td></tr></tbody>
+</table>
+<br>
+<table width="800" cellspacing="0" cellpadding="3" onclick="sortColumn(event)" class="tables">
+<thead><tr bgcolor="#1E90FF">
+<td width="30%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">服務項目</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">起始日期</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">起始時間</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">終止日期</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">終止時間</font></td>
+<td width="20%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">雲端服務編號</font></td>
+<td width="10%" align="center" class="tds"><font color="#FFFFFF" style="color: black;">流量</font></td>
+</tr></thead><tbody>
+<tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">809,508MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">2MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/01
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">195MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">147,411MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/02
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">5,057MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">73,644MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">4MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/03
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">220MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">41,009MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/04
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">51MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">149,257MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/05
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">19MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">194,969MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">3MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/06
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">64MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">78,003MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">2MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/07
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">137MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">36,331MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">5MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/08
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">84MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">37,807MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">10MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/09
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">2,750MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">30,840MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/10
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">1,461MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">18,534MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/11
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">46MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">43,808MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">5MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/12
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">154MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">45,150MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">35MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/13
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">201MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">25,373MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">5MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/14
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">233MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">32,962MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/15
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">3,001MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">99,803MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/16
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">25MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">207,211MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">184MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">12:12:24
+</font></td><td align="center" class="tds">104/03/17
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">31MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">3,244MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">8MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">677MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/18
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">3MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">21,085MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">4MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">70MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/19
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">9MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">9,160MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">24MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/20
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">180MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">10,796MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">130MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/21
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">15MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">1,267MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">13MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">222MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/22
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">9MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">4,772MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">19MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">273MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/23
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">48MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">1,906MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">994MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/24
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">65MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">6,655MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">2MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">1,276MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/25
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">17MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">1,307MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">2,647MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/26
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">142MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">935MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">2MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">655MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/27
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">19MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">1,090MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">1MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">969MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/28
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">124MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: red;">BV550145110003
+</font></td><td align="right" class="tds">16,957MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110004
+</font></td><td align="right" class="tds">2MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110007
+</font></td><td align="right" class="tds">697MB
+</td></tr><tr bgcolor="#FFFFCC">
+<td align="left" class="tds">HiCLD21    hicloud 計量制流量
+</td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">00:00:00
+</font></td><td align="center" class="tds">104/03/29
+</td><td align="center" class="tds"><font color="navy" style="color: black;">23:59:59
+</font></td><td align="left" class="tds"><font color="red" style="color: black;">BV550145110008
+</font></td><td align="right" class="tds">216MB
+</td></tr></tbody>
+<tbody><tr bgcolor="#FFFFCC">
+<td align="left" colspan="6" class="tds">總計 <font color="navy" style="color: black;">( 網路計費是以申請的所有服務之對外流量加總後合併計收 )</font></td><td align="right" colspan="1" class="tds">2,174,320MB
+</td></tr></tbody></table>
+<table width="800">
+<tbody><tr><td align="right"><font navy'="" style="font-size: 12pt; font-family: 新細明體; color: black;">中華電信 &lt; 雲端服務 &gt; 
+</font></td></tr></tbody></table>
+
+
+
+</center></body></html>

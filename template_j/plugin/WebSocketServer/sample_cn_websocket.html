@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title>LS Sample</title>
+</head>
+
+<body>
+    <form id="form1" runat="server" style="height:100%">
+    	<h2>
+            <div>WebSocket: <span id="status">WAITING</span></div>
+    	</h2>
+    	<h3>
+        <div>SH: <span id="sub">WAITING</span></div>
+      </h3>
+      <ul>
+      	<h4>
+      		<li>
+            <div><span>SH.SH000001</span>: price=[<span id="price">WAITING</span>] volume=[<span id="volume">WAITING</span>] mDEntryTime=[<span id="mDEntryTime">WAITING</span>]
+            </div>
+          </li>
+          <li>
+            <div><span>SH.SH600009</span>: price=[<span id="price1">WAITING</span>] volume=[<span id="volume1">WAITING</span>] mDEntryTime=[<span id="mDEntryTime1">WAITING</span>]
+            </div>
+          </li>
+        </h4>
+      </ul>
+			<h3>
+      	<div>SZ: <span id="sub1">WAITING</span></div>
+      </h3>
+      <ul>
+      	<h4>
+      		<li>
+            <div><span>SZ.SZ000001</span>: price=[<span id="price2">WAITING</span>] volume=[<span id="volume2">WAITING</span>] mDEntryTime=[<span id="mDEntryTime2">WAITING</span>]
+            </div>
+          </li>
+      		<li>
+            <div><span>SZ.SZ000005</span>: price=[<span id="price3">WAITING</span>]  volume=[<span id="volume3">WAITING</span>]  mDEntryTime=[<span id="mDEntryTime3">WAITING</span>]
+            </div>
+          </li>
+        </h4>
+      </ul>
+    </form>
+
+    <div id="grid"></div>
+</body>
+
+<script>
+	
+    var statusDiv = document.getElementById("status");
+    var subSpan = document.getElementById("sub");
+    var sub1Span = document.getElementById("sub1");
+
+    var priceSpan = document.getElementById("price");
+    var volumeSpan = document.getElementById("volume");
+    var mDEntryTimeSpan = document.getElementById("mDEntryTime");
+    var price1Span = document.getElementById("price1");
+    var volume1Span = document.getElementById("volume1");
+    var mDEntryTime1Span = document.getElementById("mDEntryTime1");
+    var price2Span = document.getElementById("price2");
+    var volume2Span = document.getElementById("volume2");
+    var mDEntryTime2Span = document.getElementById("mDEntryTime2");
+    var price3Span = document.getElementById("price3");
+    var volume3Span = document.getElementById("volume3");
+    var mDEntryTime3Span = document.getElementById("mDEntryTime3");
+
+	var socket;
+    var host = "ws://114.55.28.16:8080";
+
+    Connect();
+
+    function Connect() {
+        //CONNECTING = 0
+        //OPEN = 1
+        //CLOSED = 2
+        try {
+            socket = new WebSocket(host);
+            statusDiv.innerHTML = "CONNECTING (" + socket.readyState + ")";
+
+            socket.onopen = function () {
+                statusDiv.innerHTML = "OPEN (" + socket.readyState + ")";
+
+                //subscribe s: snapshot
+                //socket.send("{'a':'subscribe','v':['BTC.BitStamp.btcusd','BTC.BitStamp.btcusd']}");
+                socket.send("{'a':'subscribe','s':'true','v':['CN.SHSE.SH000001','CN.SHSE.SH600009','CN.SZSE.SZ000001','CN.SZSE.SZ000005']}");
+
+                //unSubscribe
+                //socket.send("{'a':'unSubscribe','v':['BTC.BitStamp.btcusd','BTC.BitStamp.btcusd']}");
+            }
+            socket.onmessage = function (msg) {
+                console.log('Received: ' + msg.data);
+                OnMessage(JSON.parse(msg.data));
+            }
+            socket.onclose = function () {
+                statusDiv.innerHTML = "CLOSED (" + socket.readyState + ")";
+                setTimeout(Connect, 10000);
+            }
+
+        } catch (exception) {
+            console.log('Error: ' + exception);
+        }
+    }
+
+    function OnMessage(obj) {
+        if (obj.mk != null) {
+        	  var data = obj.mk;
+            switch (data.topic) {
+                case "CN.SHSE.SH000001":
+                    priceSpan.innerHTML = data.p + ", " + data.bp1 + ", " + data.ap1 + ", " + data.ncpd + ", " + data.pd + "%";
+                    volumeSpan.innerHTML = data.ttv + ", " + data.bs1 + ", " + data.as1;
+                    mDEntryTimeSpan.innerHTML = data.t;
+                    break;
+                case "CN.SHSE.SH600009":
+                    price1Span.innerHTML = data.p + ", " + data.bp1 + ", " + data.ap1 + ", " + data.ncpd + ", " + data.pd + "%";
+                    volume1Span.innerHTML = data.ttv + ", " + data.bs1 + ", " + data.as1;
+                    mDEntryTime1Span.innerHTML = data.t;
+                    break;
+                case "CN.SZSE.SZ000001":
+                    price2Span.innerHTML = data.p + ", " + data.bp1 + ", " + data.ap1 + ", " + data.ncpd + ", " + data.pd + "%";
+                    volume2Span.innerHTML = data.ttv + ", " + data.bs1 + ", " + data.as1;
+                    mDEntryTime2Span.innerHTML = data.t;
+                    break;
+                case "CN.SZSE.SZ000005":
+                    price3Span.innerHTML = data.p + ", " + data.bp1 + ", " + data.ap1 + ", " + data.ncpd + ", " + data.pd + "%";
+                    volume3Span.innerHTML = data.ttv + ", " + data.bs1 + ", " + data.as1;
+                    mDEntryTime3Span.innerHTML = data.t;
+                    break;
+            }
+        }
+    }
+
+</script>
+
+
+</html>

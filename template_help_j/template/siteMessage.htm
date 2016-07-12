@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="幫助網,幫助網,幫助網,幫助網,幫助網" />
+<meta name="description" content="幫助網幫助網幫助網幫助網幫助網幫助網幫助網幫助網幫助網幫助網" />
+<title>幫助網 - 站內訊息</title>
+<link href="css/mian.css" rel="stylesheet" type="text/css">
+<link href="css/info.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.script.js"></script>
+<script>
+//Tab
+$(function(){
+	var _showTab = 0;
+	$('ul.tabs li').eq(_showTab).addClass('active');
+	$('.tab_content').hide().eq(_showTab).show();
+	$('ul.tabs li').click(function() {
+		var $this = $(this),
+			_clickTab = $this.find('a').attr('href');
+		$this.addClass('active').siblings('.active').removeClass('active');
+		$(_clickTab).stop(false, true).fadeIn().siblings().hide();
+
+		return false;
+	}).find('a').focus(function(){
+		this.blur();
+	});
+});
+</script>
+</head>
+
+<body>
+<header>
+ <div class="wrapper">
+  <h1><a href="#"><img src="images/logo.png"/></a></h1>
+  <div class="column">
+   <div class="gotop"><a href="#">gotop</a></div>
+   <div class="language">
+    <form>
+     <select>
+      <option>繁體中文</option>
+      <option>简体中文</option>
+      <option>ENGLISH</option>
+     </select>
+    </form>
+   </div>
+   <div class="link"><a href="#">返回網站</a></div>
+   <div class="user">abc123@gmail.com</div>
+  </div>
+ </div>
+</header>
+<div class="content">
+ <div class="submenu">
+  <ul>
+   <li><a href="index.htm">控制台首頁</a></li>
+   <li><a href="set.htm">設定</a>
+    <ul>
+     <li><a href="#">個人資料</a></li>
+     <li><a href="#">收款資料</a></li>
+     <li><a href="#">修改密碼</a></li>
+    </ul>
+   </li>
+   <li><a href="helpAndGetHelp.htm">互助中心</a>
+    <ul>
+     <li><a href="helpAndGetHelp.htm">幫助與被幫助</a></li>
+     <li><a href="#">幫助列表</a></li>
+     <li><a href="helped.htm">被幫助列表</a></li>
+    </ul>
+   </li>
+   <li><a href="#">收益報表</a>
+    <ul>
+     <li><a href="#">收益明細</a></li>
+     <li><a href="#">收益列表</a></li>
+    </ul>
+   </li>
+   <li><a href="partnerMember.htm">我的夥伴</a>
+    <ul>
+     <li><a href="#">夥伴樹狀圖</a></li>
+     <li><a href="partnerMember.htm">我的夥伴</a></li>
+    </ul>
+   </li>
+   <li class="now"><a href="siteMessage.htm">站內訊息 (0)</a></li>
+   <li><a href="#">網站公告</a></li>
+   <li><a href="#">登出</a></li>
+  </ul>
+ </div>
+ <div class="container"> 
+  
+  <!--tab-->
+  <div class="tab-wrap">
+   <ul class="tabs">
+    <li class="active"><a href="#tab1">收件夾( <strong class="mark">1</strong> ) </a></li>
+    <li><a href="#tab2">寄件備份( <strong>0</strong> )</a></li>
+   </ul>
+   <div class="tab_container">
+    <div style="display:block;" id="tab1" class="tab_content">
+     <div class="content-info"> 
+      
+      <!--filter-->
+      <div class="filter">
+       <form action="" method="get">
+        <input type="text" placeholder="搜尋訊息" class="long">
+        <input type="button" value="送出" class="button">
+        <input type="button" value="+ 建立新訊息" class="button">
+        <input type="button" value="∨ 全選" class="button-yellow">
+        <input type="button" value="↺ 重整" class="button-green">
+        <input type="button" value="✕ 刪除" class="button-red">
+       </form>
+      </div>
+      
+      <!--tablebox-->
+      <div class="tablebox">
+       <form action="" method="get">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+         <tr>
+          <td>收件夾</td>
+          <td>時間</td>
+          <td>寄件者</td>
+          <td>標題</td>
+          <td>功能</td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+         <tr>
+          <td><input name="" type="checkbox" value="" class="checkbox"></td>
+          <td>2016/01/02 09:20</td>
+          <td>我</td>
+          <td>如何加入會員</td>
+          <td><a href="#">查看</a></td>
+         </tr>
+        </table>
+       </form>
+      </div>
+      
+      <!--pageNumber-->
+      <ul class="page-number">
+       <li><a href="#">&laquo;</a></li>
+       <li><a href="#">&lsaquo;</a></li>
+       <li><a href="#" class="on">1</a></li>
+       <li><a href="#">2</a></li>
+       <li><a href="#">3</a></li>
+       <li><a href="#">4</a></li>
+       <li><a href="#">5</a></li>
+       <li><a href="#">&rsaquo;</a></li>
+       <li><a href="#">&raquo;</a></li>
+      </ul>
+     </div>
+    </div>
+    
+    <!--tab-->
+    <div style="display:none;" id="tab2" class="tab_content"> 
+     
+     <!--filter-->
+     <div class="filter">
+      <form action="" method="get">
+       <input type="text" placeholder="搜尋訊息" class="long">
+       <input type="button" value="送出" class="button">
+       <input type="button" value="+ 建立新訊息" class="button">
+       <input type="button" value="∨ 全選" class="button-yellow">
+       <input type="button" value="↺ 重整" class="button-green">
+       <input type="button" value="✕ 刪除" class="button-red">
+      </form>
+     </div>
+     
+     <!--table box-->
+     <div class="tablebox">
+      <form action="" method="get">
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+         <td>寄件備份</td>
+         <td>時間</td>
+         <td>寄件者</td>
+         <td>標題</td>
+         <td>功能</td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+        <tr>
+         <td><input name="" type="checkbox" value="" class="checkbox"></td>
+         <td>2016/01/02 09:20</td>
+         <td>網站客服</td>
+         <td>我想升級會員</td>
+         <td><a href="#">查看</a></td>
+        </tr>
+       </table>
+      </form>
+     </div>
+     
+     <!--pageNumber-->
+     <ul class="page-number">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">&lsaquo;</a></li>
+      <li><a href="#" class="on">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&rsaquo;</a></li>
+      <li><a href="#">&raquo;</a></li>
+     </ul>
+     </form>
+    </div>
+   </div>
+  </div>
+  
+  <!--list-->
+  <div class="list">
+   <h2 class="new-message">建立新訊息 ( *必填欄位 )</h2>
+   
+   <!--Form-->
+   <div class="new-msg">
+    <form action="" method="get">
+     <input type="text" placeholder="* 收件者" class="long">
+     <input type="text" placeholder="* 標題" class="long">
+     <textarea class="long" placeholder="* 內容"></textarea>
+     <input type="button" value="傳送" class="button" style="display:block; margin:20px auto;">
+    </form>
+   </div>
+  </div>
+  
+  <!--list-->
+  <div class="list">
+   <h2 class="admin">如何加入會員</h2>
+   
+   <!--msg-->
+   <div class="msg">
+    <dl>
+     <dt><strong class="blue">我</strong>　<a href="mailto:1234@gmail.com">1234@gmail.com</a>　2014/10/06 11:12:30</dt>
+     <dd>問題內容問題內容問題內容問題內容問題內容問題內容問題內容問題內容問題內容</dd>
+    </dl>
+    <dl>
+     <dt><strong class="blue">客服回復</strong>　2014/10/06 11:12:30</dt>
+     <dd>問題內容問題內容問題內容問題內容問題內容問題內容問題內容問題內容問題內容</dd>
+    </dl>
+    <dl>
+     <dt><strong class="blue">我</strong>　<a href="mailto:1234@gmail.com">1234@gmail.com</a>　2014/10/06 11:12:30</dt>
+     <dd>問題內容問題內容問題內容問題內容問題內容問題內容問題內容問題內容問題內容</dd>
+    </dl>
+    <dl>
+     <dt><strong class="blue">客服回復</strong>　2014/10/06 11:12:30</dt>
+     <dd>問題內容問題內容問題內容問題內容問題內容問題內容問題內容問題內容問題內容</dd>
+    </dl>
+   </div>
+   
+   <!--Form-->
+   <div class="new-msg">
+    <form action="" method="get">
+     <textarea class="long" placeholder="內容"></textarea>
+     <input type="button" value="傳送" class="button" style="display:block; margin:20px auto;">
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+<footer> Copyright © abc.com all rights reserve </footer>
+</body>
+</html>

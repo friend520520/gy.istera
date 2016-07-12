@@ -1,0 +1,614 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="幫助網,幫助網,幫助網,幫助網,幫助網" />
+<meta name="description" content="幫助網幫助網幫助網幫助網幫助網幫助網幫助網幫助網幫助網幫助網" />
+<title>幫助網 - 幫助與得到幫助</title>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link href="css/mian.css" rel="stylesheet" type="text/css">
+<link href="css/info.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.script.js"></script>
+<script>
+//Date
+$(function(){
+	$('.time').datepicker();
+});
+</script>
+</head>
+
+<body>
+<header>
+ <div class="wrapper">
+  <h1><a href="#"><img src="images/logo.png"/></a></h1>
+  <div class="column">
+   <div class="gotop"><a href="#">gotop</a></div>
+   <div class="language">
+    <form>
+     <select>
+      <option>繁體中文</option>
+      <option>简体中文</option>
+      <option>ENGLISH</option>
+     </select>
+    </form>
+   </div>
+   <div class="link"><a href="#">返回網站</a></div>
+   <div class="user">abc123@gmail.com</div>
+  </div>
+ </div>
+</header>
+<div class="content">
+ <div class="submenu">
+  <ul>
+   <li><a href="index.htm">控制台首頁</a></li>
+   <li><a href="set.htm">設定</a>
+    <ul>
+     <li><a href="#">個人資料</a></li>
+     <li><a href="#">收款資料</a></li>
+     <li><a href="#">修改密碼</a></li>
+    </ul>
+   </li>
+   <li class="now"><a href="helpAndGetHelp.htm">互助中心</a>
+    <ul>
+     <li><a href="helpAndGetHelp.htm">幫助與被幫助</a></li>
+     <li><a href="#">幫助列表</a></li>
+     <li><a href="helped.htm">被幫助列表</a></li>
+    </ul>
+   </li>
+   <li><a href="#">收益報表</a>
+    <ul>
+     <li><a href="#">收益明細</a></li>
+     <li><a href="#">收益列表</a></li>
+    </ul>
+   </li>
+   <li><a href="partnerMember.htm">我的夥伴</a>
+    <ul>
+     <li><a href="#">夥伴樹狀圖</a></li>
+     <li><a href="partnerMember.htm">我的夥伴</a></li>
+    </ul>
+   </li>
+   <li><a href="siteMessage.htm">站內訊息 (0)</a></li>
+   <li><a href="#">網站公告</a></li>
+   <li><a href="#">登出</a></li>
+  </ul>
+ </div>
+ <div class="container"> 
+  
+  <!--path-->
+  <div class="path"><a href="#">互助中心</a> &gt; <a href="#">幫助與得到幫助</a></div>
+  
+  <!--filter-->
+  <div class="filter">
+   <form action="" method="get">
+    類型
+    <select name="">
+     <option>全部</option>
+     <option>提供幫助</option>
+     <option>被幫助</option>
+    </select>
+    建立時間
+    <input type="text" value="" placeholder="開始時間" class="time">
+    ~
+    <input type="text" value="" placeholder="結束時間" class="time">
+    狀態
+    <select name="">
+     <option>全部</option>
+     <option>訂單未配對</option>
+     <option>訂單配對中</option>
+     <option>正在配對</option>
+     <option>訂單完成</option>
+     <option>訂單失敗</option>
+    </select>
+    <input type="text" placeholder="搜尋訂單編號">
+    <input type="button" value="送出" class="button">
+   </form>
+  </div>
+  
+  <!--list-->
+  <div class="list">
+   <h2>幫助與得到幫助</h2>
+   <a href="#" class="btn-receive-help">提供幫助 &raquo;</a><a href="#" class="btn-helped">得到幫助 &raquo;</a>
+   <div class="tablebox">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+      <td>訂單編號</td>
+      <td>類型</td>
+      <td>建立時間</td>
+      <td>金額</td>
+      <td>利息</td>
+      <td>狀態</td>
+      <td>被幫助</td>
+      <td>功能</td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>提供幫助</td>
+      <td>2016/01/02 09:30</td>
+      <td>1000</td>
+      <td>400</td>
+      <td class="blue">尚未配對</td>
+      <td>否</td>
+      <td><a class="order" href="#">刪除</a><a class="order" href="#">訂單明細</a></td>
+     </tr>
+    </table>
+   </div>
+   
+   <!--pageNumber-->
+   <ul class="page-number">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">&lsaquo;</a></li>
+    <li><a href="#" class="on">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&rsaquo;</a></li>
+    <li><a href="#">&raquo;</a></li>
+   </ul>
+  </div>
+  
+  <!--list-->
+  <div class="list">
+   <h2>被幫助明細：( 訂單編號 ) 金額：1000.00</h2>
+   <div class="tablebox">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+      <td>幫助人</td>
+      <td>幫助狀態</td>
+      <td>幫助金額</td>
+      <td>配對時間</td>
+      <td>到期時間</td>
+      <td>功能</td>
+      <td>&nbsp;</td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em class="undone">剩餘時間12小時</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td class="mark"><a href="#">訊息(<strong>3</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">投訴</a> <a href="#">匯款明細</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+    </table>
+   </div>
+   
+   <!--pageNumber-->
+   <ul class="page-number">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">&lsaquo;</a></li>
+    <li><a href="#" class="on">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&rsaquo;</a></li>
+    <li><a href="#">&raquo;</a></li>
+   </ul>
+  </div>
+  
+  <!--list-->
+  <div class="list">
+   <h2>提供幫助明細：( 訂單編號 ) 金額：1000.00</h2>
+   <div class="tablebox">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+      <td>幫助人</td>
+      <td>幫助狀態</td>
+      <td>幫助金額</td>
+      <td>配對時間</td>
+      <td>到期時間</td>
+      <td>功能</td>
+      <td>&nbsp;</td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em class="undone">剩餘時間12小時</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td class="mark"><a href="#">訊息(<strong>3</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">投訴</a> <a href="#">匯款明細</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+     <tr>
+      <td>王小明</td>
+      <td>未付款</td>
+      <td>1000USD</td>
+      <td>2016/01/02 19:20</td>
+      <td>2016/01/03 19:20<em>已付款</em></td>
+      <td><a href="#">詳細資料</a></td>
+      <td><a href="#">訊息(<strong>0</strong>)</a></td>
+     </tr>
+    </table>
+   </div>
+   
+   <!--pageNumber-->
+   <ul class="page-number">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">&lsaquo;</a></li>
+    <li><a href="#" class="on">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&rsaquo;</a></li>
+    <li><a href="#">&raquo;</a></li>
+   </ul>
+  </div>
+  
+  <!--list-->
+  <div class="list">
+   <h2>得到幫助</h2>
+   <p class="words">可允許提出頻率 <strong>5</strong> 次　全部可提領金額 <strong>1000</strong>　<a class="info-link" href="#">提領全部 ▶</a></p>
+   <div class="tablebox">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+      <td>訂單號碼</td>
+      <td>類型</td>
+      <td>建立時間</td>
+      <td>金額</td>
+      <td>利息</td>
+      <td>全部</td>
+      <td>自訂金額</td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>存款</td>
+      <td>2016/01/02 19:20</td>
+      <td>1000</td>
+      <td>&nbsp;</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>利息</td>
+      <td>2016/01/02 19:20</td>
+      <td>&nbsp;</td>
+      <td>400</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>存款</td>
+      <td>2016/01/02 19:20</td>
+      <td>1000</td>
+      <td>&nbsp;</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>存款</td>
+      <td>2016/01/02 19:20</td>
+      <td>1000</td>
+      <td>&nbsp;</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>存款</td>
+      <td>2016/01/02 19:20</td>
+      <td>1000</td>
+      <td>&nbsp;</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>存款</td>
+      <td>2016/01/02 19:20</td>
+      <td>1000</td>
+      <td>&nbsp;</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>存款</td>
+      <td>2016/01/02 19:20</td>
+      <td>1000</td>
+      <td>&nbsp;</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>存款</td>
+      <td>2016/01/02 19:20</td>
+      <td>1000</td>
+      <td>&nbsp;</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>存款</td>
+      <td>2016/01/02 19:20</td>
+      <td>1000</td>
+      <td>&nbsp;</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+     <tr>
+      <td>1247784748743</td>
+      <td>存款</td>
+      <td>2016/01/02 19:20</td>
+      <td>1000</td>
+      <td>&nbsp;</td>
+      <td><input name="" type="checkbox" value="" class="checkbox"></td>
+      <td><input type="text" class="text"></td>
+     </tr>
+    </table>
+    </form>
+   </div>
+   <form action="" method="get">
+    <p class="words">帳戶餘額 <strong>1000</strong>　得到幫助金額 <strong>1000</strong>　
+     <input type="button" value="送出" class="button">
+    </p>
+   </form>
+  </div>
+  <div class="list">
+   <h2>提供幫助</h2>
+   <p></p>
+   <form action="" method="get">
+    <input type="text" class="box" placeholder="請輸入金額">
+    <input type="button" value="送出" class="button">
+   </form>
+  </div>
+ </div>
+</div>
+</div>
+<footer> Copyright © abc.com all rights reserve </footer>
+</body>
+</html>

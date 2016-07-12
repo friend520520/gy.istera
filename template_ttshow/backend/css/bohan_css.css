@@ -1,0 +1,244 @@
+.bohanstyle{
+    height:40%;
+    margin-top:-195px;
+    width:14.8%;
+}
+.bohanimg{
+    height:195px;
+    width:275px;
+}
+.bohantriangle{
+    border-bottom:11px solid #F8F8F8;
+    border-left:11px solid rgba(0, 0, 0, 0);
+    border-right:11px solid rgba(0, 0, 0, 0);
+    height: 0;
+    margin-left: 92%;
+    margin-top: -4.3%;
+    position: absolute;
+    width: 0;
+}
+.bohanblacktriangle{
+    border-bottom:12px solid #CCCCCA;
+    border-left:12px solid rgba(0, 0, 0, 0);
+    border-right:12px solid rgba(0, 0, 0, 0);
+    height: 0;
+    margin-left: 92%;
+    margin-top: -4.3%;
+    position: absolute;
+    width: 0;
+}
+.bohanicon{
+    float:right;
+    background-image: url("../../img/glyphicons-halflings.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-top: -30px;
+    vertical-align: text-top;
+    width: 14px;
+    background-position: -121px -96px;
+}
+.bohanModalimg{
+    height:500px;
+    width:100%;
+}
+.bohanSmallImg{
+    height:120px;
+    width:120px;
+}
+.bohanTextStyle{
+    line-height:22px;
+    margin:20px 0;
+    text-indent:18px;
+}
+.bohanStoreTitle{
+    font-weight:800;
+    font-size:33px;
+}
+.bohanTextBottom{
+margin-bottom:14px;
+}
+.bohanDropSmallImg{
+    height:65%;
+}
+.bohanProjectStyle {
+  background-color: #FFFFFF;
+  background-image: url("");
+  background-repeat: no-repeat;
+  border: 1px solid #CECECE;
+  float: left;
+  height: 150px;
+  margin-left: 7px;
+  margin-top: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  text-align: center;
+  width: 121px;
+  z-index: 5;
+}
+/*
+.bohanProjectStyle{
+  background-color: #FFFFFF;
+  background-image: url("");
+  background-repeat: no-repeat;
+  border: 1px solid #CECECE;
+  float: left;
+  height: 140px;
+  margin-left: 7px;
+  margin-top: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+  width: 121px;
+  text-align: center;
+}*/
+.bohanProjectStyle:hover {
+  border: 6px solid #A5A5A5;
+  cursor: pointer;
+  float: left;
+  height: 150px;
+  padding-top: 0px;
+  text-align: center;
+  width: 121px;
+}
+.bohanProjectStyle:hover[objtype=folder] {
+  border: 6px solid #A5A5A5;
+  cursor: pointer;
+  float: left;
+  height: 150px;
+  padding-top: 0px;
+  text-align: center;
+  width: 121px;
+  opacity: 0.5;
+}
+.bohanProjectStyle:hover div{
+  width: 100px;
+  height: 128px;
+  margin-top: 5px;
+}
+.bohanProjectStyle.selected {
+  border: 6px solid #95B926;
+  float: left;
+  height: 153px;
+  margin: 50px -2px -3px 5px;
+  padding-top: 0px;
+  text-align: center;
+  width: 125px;
+  opacity: 1;
+  z-index: 1;
+}
+.bohanProjectStyle.selected div{
+            width     : 102px;
+            height    : 131px;
+            margin-top: 5px;
+}
+
+.bohanStoreUl {
+            left: 18px;
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 20px;
+            width: 100%;
+}
+
+.bohanPage{
+    padding: 0 0 40px;
+}
+/*
+ul#Pager li{
+    background-image: url("../../img/store_images/1.jpg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    height: 50px;
+    margin-right: 10px;
+    padding: 24px 0 0 60px;
+    width: 92px;
+    background-position: 18px 17px;
+}*/
+.form-control.error{
+    border: 1px solid red!important;
+}
+
+.form-control.error:focus{
+    border-color: red!important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 175, 233, 0.6)!important;
+}
+
+/*bohan20140728++*/
+.edit .tool span.SturdyDrag{
+    display: none!important;
+}
+
+.SturdyDrag{
+    background-color: #777!important;
+    border-radius: .25em!important;
+    color: #fff!important;
+    cursor: pointer!important;
+    display: inline!important;
+    font-size: 75%!important;
+    font-weight: bold!important;
+    line-height: 1!important;
+    opacity: 0.2!important;
+    padding: .2em .6em .3em!important;
+    position: absolute!important;
+    right: 37px!important;
+    text-align: center!important;
+    top: 5px!important;
+    transition: all 500ms ease 0s!important;
+    vertical-align: baseline!important;
+    white-space: nowrap!important;
+    z-index: 10!important;
+}
+
+.SturdyDrag > i{
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    position: relative;
+    top: 1px;
+}
+
+.demo .box:hover > .SturdyDrag{
+    opacity: 1!important;
+}
+
+.edit .tool a.SturdyRemove{
+    display: none!important;
+}
+
+.SturdyRemove{
+    top: 5px!important;
+    right: 5px!important;
+    z-index: 10!important;
+    opacity: 0.2!important;
+    transition: all 500ms ease 0s!important;
+    cursor: pointer!important;
+    position: absolute!important;
+    display: inline!important;
+    padding: .2em .6em .3em!important;
+    font-size: 75%!important;
+    font-weight: bold!important;
+    line-height: 1!important;
+    color: #fff!important;
+    text-align: center!important;
+    white-space: nowrap!important;
+    vertical-align: baseline!important;
+    border-radius: .25em!important;
+    background-color: #d9534f!important;
+}
+
+.demo .box:hover > .SturdyRemove{
+    opacity: 1!important;
+}
+/*bohan20140728--*/
+[id=dropbox_media_edit],[id=dropbox_json_edit]{
+    z-index: 5;
+}

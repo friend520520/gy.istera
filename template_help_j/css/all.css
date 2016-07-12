@@ -1,0 +1,699 @@
+﻿.modal-backdrop {
+    background-color: rgba(0%, 0%, 0%, 0.5);
+}
+.bg_middle {
+    background-position: 50% 50%;
+    background-size: cover;
+    /*position: absolute;*/
+    height: 100%;
+    width: 100%;
+}
+.bg_top {
+    background-position: 50% 0;
+    background-size: cover;
+    /*position: absolute;*/
+}
+.center { /*AL 20160406*/
+        text-align: center;
+}
+.center input { /*AL 20160406*/
+        display: inline-block;
+}
+.float-right { float: right;}
+.float-left { float: left;}
+.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+.alignleft {
+        display: block;
+        margin-right: auto;
+}
+.alignright {
+        display: block;
+        margin-left: auto;
+}
+.border-point {
+    border: 1px dashed black;
+}
+.res_div > div,.res_div2 > div,.res_div3 > div,.res_div4 > div {
+    background-position: 50% 0;
+    background-size: cover;
+    bottom: 0 !important;
+    height: 100% !important;
+    left: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+}
+.res_div::after {
+    content: "" !important;
+    display: block !important;
+    padding-bottom: 60% !important;
+}
+.res_div2::after {
+    content: "" !important;
+    display: block !important;
+    padding-bottom: 88% !important;
+}
+.res_div3::after {
+    content: "" !important;
+    display: block !important;
+    padding-bottom: 75% !important;
+}
+.res_div4::after {
+    content: "" !important;
+    display: block !important;
+    padding-bottom: 100% !important;
+}
+.res_div,.res_div2,.res_div3,.res_div4 {
+    position: relative;
+}
+
+
+/*upload process*/
+.statusbar {
+  border-top: 1px solid #a9ccd1;
+  /*height: 25px;*/
+  margin-top: 0;
+  /*padding: 10px 0 0;*/
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+}
+.statusbar:nth-child(odd){
+    background:#EBEFF0;
+}
+.filename
+{
+    display:inline-block;
+    vertical-align:top;
+    width:70px;
+    margin-left:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.filesize
+{
+    display:inline-block;
+    vertical-align:top;
+    color:#30693D;
+    width:65px;
+    margin-left:10px;
+    margin-right:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.progressBar {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    height: 22px;
+    margin: 9px 10px 9px 5px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 120px;
+}
+.progressBar div {
+    background-color: #7e7e7e;
+    border-radius: 3px;
+    color: #fff;
+    height: 100%;
+    line-height: 22px;
+    text-align: right;
+    width: 0;
+    margin: 0px;
+}
+.abort{
+    /*background-color:#A8352F;*/
+    background-color:#c2c2c2;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    /*border-radius:4px;*/
+    border-radius:50%;
+    display:inline-block;
+    color:#fff;
+    font-family:arial;
+    font-size:13px;
+    font-weight:normal;
+    /*padding:4px 15px;*/
+    padding: 0px 7px;
+    cursor:pointer;
+    vertical-align:top;
+    margin-top:10px;
+    margin-right: 10px;
+}
+
+
+/*upload UI*/
+.child-middle > * {
+    vertical-align: middle;
+}
+.child-middle {
+    margin: 10px;
+}
+.fileUpload {
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.photo span {
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.3s ease 0s;
+    width: 112px;
+}
+.photo .upload {
+    background: #2F8DCD;
+    margin: 5px;
+}
+.photo .upload::before {
+    background: rgba(0, 0, 0, 0) url("../template_funbook/images/upload.png") repeat scroll left top;
+    content: "";
+    display: inline-block;
+    height: 14px;
+    position: relative;
+    top: 2px;
+    width: 19px;
+}
+
+
+/*bootstrap tooltip*/
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  visibility: visible;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.4;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.tooltip.top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.tooltip.right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.tooltip.bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.tooltip.left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  border-radius: 4px;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000000;
+}
+.tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  right: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000000;
+}
+.tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000000;
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000000;
+}
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000000;
+}
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000000;
+}
+.tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000000;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000000;
+}
+.tooltip{
+  box-sizing: border-box;
+}
+
+/*bootstrap modal */
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.fade.in {
+    opacity: 1;
+}
+.modal {
+    padding: 0 !important;
+}
+.modal {
+    bottom: 0;
+    display: none;
+    left: 0;
+    outline: 0 none;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear 0s;
+}
+.modal-backdrop.in {
+    opacity: 0.7;
+}
+.modal-backdrop {
+    background-color: #000000;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}.modal.in .modal-dialog {
+    transform: translate(0px, 0px);
+}
+.modal.fade .modal-dialog {
+    transform: translate(0px, -25%);
+    transition: ease-out 2s ease-in 0s;
+}
+.modal-dialog {
+    margin: 30px auto;
+    width: 600px;
+    position: relative;
+}
+
+/*-- 
+    AL all css 20160514
+--*/
+
+/* dialog */
+#dialog-msg,#sms-msg{
+    position:relative; 
+    left:0; 
+    top:0; 
+    width:100%; 
+    height:100%; 
+    z-index:1000;
+}
+#dialog-msg dl{
+    background: #fff none repeat scroll 0 0;
+    /*margin: 5em auto;*/
+    width: 100%;/*AL 20160531*/ 
+    border-radius: 10px;
+}
+#dialog-msg dt{
+    position:relative; 
+    /*background: url(../template_funbook/images/alert_icon.png) center center no-repeat #87cdcb; */
+    background: #2f8dcd;
+    /*
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+    padding: 15px 0 5px;
+    text-align: center;
+}
+#dialog-msg dt a{
+    position:absolute; 
+    right:21px; 
+    top:23px; 
+    display:block; 
+    width:10px; 
+    height:10px; 
+    background:url(../template_funbook/images/close.png) no-repeat ;
+    opacity: 1; 
+    text-indent:-9999px; 
+    cursor:pointer; 
+    transition:all .3s;
+}
+#dialog-msg dt a.button:hover{
+    opacity:.6;
+}
+#dialog-msg dd{
+    color: #666;
+    font-size: 13px;
+    line-height: 28px;
+    padding: 0 15px;
+    text-align: center;
+    /*
+    padding:20px; 
+    font-size:15px; 
+    color:#666; 
+    line-height:28px; 
+    text-align:center;*/
+}
+#dialog-msg .title {
+    color: #fff;
+    font-size: 20px; 
+    margin-bottom: 5px;
+    
+    padding-left: 0px;
+    
+}
+#dialog-msg .list-title {
+    background: rgba(0, 0, 0, 0) url("../template/images/icon-title.png") no-repeat scroll left top;
+    color: rgb(47, 141, 205);
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 5px 0 5px 30px;
+    text-align: left;
+}
+#dialog-msg dd a.button,#dialog-msg .list a.button {
+    text-align: center;
+    display:inline-block; 
+    width:100px; 
+    height: auto;
+    border: 0;
+    margin:20px 5px 0; 
+    background:#2f8dcd; 
+    border-radius:5px; 
+    font-size:15px; 
+    color:#FFF; 
+    line-height:40px; 
+    cursor:pointer; 
+    box-sizing:border-box; 
+    transition:all .3s;
+    text-decoration: none;
+}
+#dialog-msg dd a.button.delet,#dialog-msg .list a.button.delet {
+    background:#999;
+}
+#dialog-msg dd a.button :hover{
+    background:#999;
+}
+#dialog-msg dt[class="message"]{
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+    /*
+    background: #87cdcb none repeat scroll 0 0;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 13px 0;
+    position: relative;
+    text-align: center;*/
+}
+#dialog-msg form { 
+    margin: 0 auto;
+}
+#dialog-msg form li{
+    padding: 5px 0;
+    position: relative;
+}
+#dialog-msg form li span {font-weight: bold;
+    left: 0;
+    position: absolute;
+    top: 15px;
+}
+/*
+#dialog-msg input, #dialog-msg select{    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 13px;
+    height: 30px;
+    line-height: 28px;
+    padding: 0px 10px;
+    margin-left: 30%;
+    width: 60%;
+}*/
+/* 訊息 dialog*/
+#sms-msg .list{
+    margin: 5em auto;
+    width: 100%;/*AL 20160607*/
+    border-radius: 10px;
+}
+#sms-msg .admin {
+    height: 100%;
+}
+#sms-msg .list > a {
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    opacity: 1;
+    position: absolute;
+    right: 21px;
+    top: 23px;
+    transition: all 0.3s ease 0s;
+    width: 10px;
+}
+/* 登入註冊 alert error*/
+.set form li.verify img {
+    display: block;
+    position: absolute;
+    height: 34px;
+    top: 10px;
+}
+.set form li.verify .refresh {
+    background: #87cdcb url("../template_funbook/images/refresh.png") no-repeat scroll center center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    top: 10px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 11px;
+    transition: all 0.3s ease 0s;
+    width: 30px;
+}
+.set .alert {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 0;
+    text-align: right;
+}
+.set .alert::before {
+    background: rgba(0, 0, 0, 0) url("../template_funbook/images/alert.png") repeat scroll 0 0;
+    content: "";
+    display: inline-block;
+    height: 17px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    width: 17px;
+}
+.set .alert.success {
+    color: #578f00;
+}
+.set .alert.success::before {
+    background-position: left top;
+}
+.set .alert.warning {
+    color: #ffc000;
+}
+.set .alert.warning::before {
+    background-position: center top;
+}
+.set .alert.error {
+    color: #d30000;
+}
+.set .alert.error::before {
+    background-position: right top;
+}
+
+/* RWD */
+@media screen and (max-width:1200px){
+    #dialog-msg dl{
+        width: 80%; 
+    }
+    #sms-msg .list{
+        width: 80%; 
+    }
+}
+@media screen and (max-width:680px){
+    #dialog-msg dl{
+        width: 80%; 
+    }
+    #sms-msg .list{
+        width: 80%; 
+    }
+}
+@media screen and (max-width:400px){
+    #dialog-msg dl{
+        width: 100%; 
+    }
+    #sms-msg .list{
+        width: 100%; 
+    }
+}
+
+/* template bug*/
+.container select {
+    border: 2px solid rgb(163, 177, 178);
+    border-radius: 3px;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    height: 30px;
+    transition: all 1s ease 0s;
+}
+
+/*後台管理 搜尋box*/
+.dataTable_search_box {
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.dataTable_function_btn_box {
+    /*padding: 10px 0; */
+    height: 30px;
+}
+/* jack 20160619 */
+#condition_Datatable, #statistics_Datatable {
+  border: 1px dashed #ddd;
+  font-size: 15px;
+  margin: 0;
+  padding: 10px 10px 5px;
+}
+/*
+#condition_Datatable, #statistics_Datatable {
+    border: 1px dashed #ddd;
+    margin: 0 0 10px;
+    padding: 15px;
+}*/
+#condition_Datatable input
+{
+    border: 2px solid rgb(163, 177, 178);
+    border-radius: 3px;
+    color: rgb(102, 102, 102);
+    font-family: "微軟正黑體";
+    font-size: 12px;
+    height: 28px;
+    margin: 2px 3px;
+    padding: 0 5px;
+    transition: all 1s ease 0s;
+}
+#condition_Datatable select
+{
+    border: 2px solid rgb(163, 177, 178);
+    border-radius: 3px;
+    color: rgb(102, 102, 102);
+    font-family: "微軟正黑體";
+    font-size: 12px;
+    height: 32px;
+    margin: 2px 3px;
+    padding: 0 5px;
+    transition: all 1s ease 0s;
+}
+.dataTable_search_box button,.dataTable_function_btn_box button {
+    background: rgb(163, 177, 178) none repeat scroll 0 0;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+    padding: 0 20px;
+    text-decoration: none;
+    transition: all 1s ease 0s;
+    border: 0;
+    cursor: pointer;
+}
+.dataTable_search_box button:hover,.dataTable_function_btn_box button:hover {
+    background: rgb(47, 141, 205) none repeat scroll 0 0;
+}
+.dataTable_function_btn_box > div {
+    border: 1px dashed rgb(221, 221, 221); 
+    padding: 8px; 
+    width: 300px; 
+    height: 22px;
+    color: rgb(102, 102, 102);
+}
+.dataTable_search_box .submit {
+    margin: 10px auto 0;
+}
+#condition_Datatable td {
+    padding-right: 20px;
+}
+#statistics_Datatable input[type="radio"], input[type="checkbox"] {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#display_checkbox > .float-left {
+    margin-right: 15px;
+}
+.tablebox td em.error {
+    background: rgba(255, 40, 40, 0.5) none repeat scroll 0 0;
+}
+
+.main-content {
+    background-color: #f2f2f2;
+    margin-left: 180px;
+}
+
+@media(max-width:1200px){
+    .main-content {
+        margin-left: 19%;
+    }
+}
+@media(max-width:680px){
+    .main-content {
+        margin-left: 0;
+    }
+}
